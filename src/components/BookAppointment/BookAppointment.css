@@ -1,0 +1,17 @@
+.appointment-title,
+.other-info-label {
+  color: white;
+}
+
+.book-appoint-container {
+  padding: 15px;
+}
+
+.book-appoint-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.book-btn {
+  align-items: center;
+}

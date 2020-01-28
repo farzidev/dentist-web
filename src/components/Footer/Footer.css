@@ -1,0 +1,29 @@
+.footer-container {
+  padding: 3rem 0 1rem 0;
+  background-color: #4b4b4b;
+  color: white;
+}
+
+.footer-social {
+  align-items: left;
+}
+
+.footer-end {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
+
+a:link:hover,
+a:visited:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+.footer-subscribe-form {
+  padding: 0 1rem 0 1rem;
+}

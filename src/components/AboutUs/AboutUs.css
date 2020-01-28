@@ -1,0 +1,23 @@
+.about-us-container {
+  margin: 3rem 2rem;
+}
+
+.about-us-container-base-row {
+  border: 2px solid rgba(112, 110, 110, 0.856);
+  border-radius: 10px;
+  box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
+}
+
+.about-us-left-col-division {
+  padding: 2rem 4rem 3rem 2rem;
+}
+
+.about-us-left-col {
+  border-radius: 10px;
+  box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
+}
+
+.about-us-span-left-col,
+.about-us-span-2-left-col {
+  font-size: 15px;
+}

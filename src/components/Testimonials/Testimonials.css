@@ -1,0 +1,29 @@
+.testimonials-division {
+  margin: 0 1rem;
+}
+
+.testimonials-base-row {
+  margin-top: 1rem;
+}
+
+.testimonials-right-col-div {
+  margin-top: 1rem;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff0ed;
+}
+
+.testimonial-card-1,
+.testimonial-card-2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: rgb(238, 241, 241);
+  font-size: 0.8rem;
+  padding: 2.5rem;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(134, 133, 133, 0.836);
+}
