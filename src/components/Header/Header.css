@@ -3,18 +3,11 @@
 }
 
 .header-left-col {
+  height: 30rem;
+  width: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: #5dc7da;
-  border-radius: 5px;
-  box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
-}
-
-.header-right-col {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 15px;
-  background-color: #fe8369;
   border-radius: 5px;
   box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
 }

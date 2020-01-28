@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Row, Col, Image, Button, Container } from "react-bootstrap";
 import "./Header.css";
-import BookAppointment from "../BookAppointment/BookAppointment";
 
 export default class Header extends Component {
   render() {
     return (
       <Container>
         <Row className="header-base-row">
-          <Col xl={8} lg={8} md={8} sm={12} xs={12} className="header-left-col">
+          <Col lg={12} className="header-left-col">
             <Row>
               <Col xl={7} lg={7} md={7} sm={12} xs={12}>
                 <div className="header-text">
@@ -37,7 +36,7 @@ export default class Header extends Component {
               </Col>
             </Row>
           </Col>
-          <Col
+          {/* <Col
             xl={{ span: 3, offset: 1 }}
             lg={{ span: 3, offset: 1 }}
             md={{ span: 3, offset: 1 }}
@@ -46,7 +45,7 @@ export default class Header extends Component {
             className="header-right-col"
           >
             <BookAppointment />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     );
