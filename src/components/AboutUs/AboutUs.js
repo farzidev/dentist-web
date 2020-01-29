@@ -8,7 +8,7 @@ export default class AboutUs extends Component {
       <div className="about-us-container">
         <div className="about-us-inner-container">
           <Row noGutters className="about-us-container-base-row">
-            <Col lg={9} md={9} className="about-us-left-col">
+            <Col lg={10} md={10} className="about-us-left-col">
               <div className="about-us-left-col-division">
                 <Row noGutters className="left-col-upper-row">
                   <Col md={12} lg={12}>
@@ -44,7 +44,7 @@ export default class AboutUs extends Component {
                   </Col>
                   <Col lg={3} md={3}>
                     <Image
-                      className="d-none d-lg-block"
+                      className="d-none d-lg-block tooth-care-image"
                       src="/assets/images/toothCare3x.png"
                       alt="tooth care"
                       fluid
@@ -53,15 +53,10 @@ export default class AboutUs extends Component {
                 </Row>
               </div>
             </Col>
-            <Col
-              lg={3}
-              md={3}
-              className="d-none d-lg-block"
-              // className="three-image-right-col"
-            >
+            <Col lg={2} md={2}>
               <Image
-                className="three-tooth-image"
-                src="/assets/images/toothAbout2x.png"
+                className="d-none d-lg-block three-tooth-image"
+                src="/assets/images/3tooth.png"
                 alt="tooth care"
                 fluid
               />

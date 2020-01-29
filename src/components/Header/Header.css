@@ -1,18 +1,26 @@
 .header-base-row {
   margin: 1rem 0 0 0;
+  border-radius: 2px;
+  box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
+  background-color: #5dc7da;
+  height: 25rem;
 }
 
 .header-left-col {
-  height: 30rem;
-  width: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #5dc7da;
-  border-radius: 5px;
-  box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-text {
+.header-right-col-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text-content {
   color: white;
-  padding: 1rem;
+  /* padding: 1rem;
+  position: relative;
+  min-height: 25rem; */
 }
