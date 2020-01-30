@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 import FeaturesBenefits from "./components/FeaturesBenefits/FeaturesBenefits";
 
 // import Testimon from "./components/Testimon/Testimon";
-import Test from "./components/Testimon/Test";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 export default class App extends Component {
   render() {
@@ -20,7 +20,7 @@ export default class App extends Component {
         <hr />
         <Header />
         <br />
-        <Test />
+        <Testimonial />
         <FeaturedServices />
         <FeaturesBenefits />
         <AboutUs />

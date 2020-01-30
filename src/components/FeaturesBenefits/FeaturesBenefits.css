@@ -28,22 +28,29 @@
   background-color: #fe8369;
   font-size: 0.8rem;
   padding: 2.5rem;
+  border-radius: 5px;
   text-align: left;
   color: white;
   overflow: hidden;
   border-radius: 3px;
-  box-shadow: 0 1rem 1rem rgba(63, 62, 62, 0.63);
   transition: transform 0.3s;
 }
 
 .features-benefits-card-2,
 .features-benefits-card-3 {
   background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.178);
   font-size: 0.8rem;
   padding: 2.5rem;
+  border-radius: 5px;
   text-align: left;
   overflow: hidden;
   border-radius: 3px;
+}
+
+.features-benefits-card-1:hover,
+.features-benefits-card-2:hover,
+.features-benefits-card-3:hover {
   box-shadow: 0 1rem 1rem rgba(63, 62, 62, 0.63);
 }
 
