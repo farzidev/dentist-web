@@ -7,23 +7,34 @@
 }
 
 .testimonials-right-col-div {
-  margin-top: 1rem;
   padding: 10px 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #fff0ed;
+  min-height: 30rem;
+  border-radius: 5px;
 }
 
 .testimonial-card-1,
 .testimonial-card-2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
   border-radius: 5px;
-  background-color: rgb(238, 241, 241);
+  background-color: rgb(191, 255, 255);
   font-size: 0.8rem;
   padding: 2.5rem;
   text-align: center;
   overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 0.5rem 1rem rgba(134, 133, 133, 0.836);
+  border-radius: 10px;
+}
+
+.testimonials-carousel-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-single-item {
+  margin: 1px 0;
 }

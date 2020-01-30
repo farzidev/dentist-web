@@ -1,0 +1,47 @@
+.testimonials-container {
+  margin-top: 2rem;
+  display: flex;
+  min-height: 30rem;
+  position: relative;
+}
+
+.testimonials-card-carousel {
+  min-width: 10rem;
+}
+
+.owl-theme {
+  width: 47% !important;
+}
+
+.item {
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  font-size: 0.7rem;
+  max-width: 17rem;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: white;
+  border: 1px solid rgba(56, 56, 56, 0.63);
+}
+
+.testimonial-text-inner-container {
+  margin-right: 7rem;
+}
+
+.testimonial-text-container {
+  background-color: #fff0ed;
+  display: flex;
+  align-items: center;
+  min-width: 40rem;
+  position: absolute;
+  right: 0;
+  padding: 0 0 0 10rem;
+  min-height: 30rem;
+}
+
+.image-division {
+  padding: 0 4.2rem;
+}

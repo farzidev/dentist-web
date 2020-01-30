@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Carousel, CarouselItem } from "react-bootstrap";
+import { Row, Col, Carousel, CarouselItem, Image } from "react-bootstrap";
 import "./Testimonials.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +9,15 @@ export default class Testimonials extends Component {
     return (
       <div className="testimonials-division">
         <Row className="testimonials-base-row">
-          <Col xl={4} lg={4} md={4} sm={12} xs={12}>
-            <Carousel controls={false}>
+          <Col
+            xl={4}
+            lg={4}
+            md={4}
+            sm={12}
+            xs={12}
+            className="testimonials-carousel-container"
+          >
+            <Carousel controls={false} indicators={false}>
               <CarouselItem>
                 <Row>
                   <Col
@@ -124,7 +131,76 @@ export default class Testimonials extends Component {
               <div>
                 <h6>Client About Us</h6>
                 <h2>Testimonial</h2>
-                <ul>
+                <br />
+                <div className="testimonials-list-items">
+                  <span className="testimonials-single-item">
+                    <Image
+                      className="check-mark-image"
+                      src="/assets/images/checkMark.svg"
+                      alt="check-mark"
+                      height="20px"
+                      width="20px"
+                      fluid
+                    />
+                    &nbsp;&nbsp;&nbsp;We thrive to create the best experience
+                    for everyone who comes to us.
+                  </span>
+                  <br />
+                  <span className="testimonials-single-item">
+                    <Image
+                      className="check-mark-image"
+                      src="/assets/images/checkMark.svg"
+                      alt="check-mark"
+                      height="20px"
+                      width="20px"
+                      fluid
+                    />
+                    &nbsp;&nbsp;&nbsp;We thrive to create the best experience
+                    for everyone who comes to us.
+                  </span>
+                  <br />
+                  <span className="testimonials-single-item">
+                    <Image
+                      className="check-mark-image"
+                      src="/assets/images/checkMark.svg"
+                      alt="check-mark"
+                      height="20px"
+                      width="20px"
+                      fluid
+                    />
+                    &nbsp;&nbsp;&nbsp;We thrive to create the best experience
+                    for everyone who comes to us.
+                  </span>
+                  <br />
+                  <span className="testimonials-single-item">
+                    <Image
+                      className="check-mark-image"
+                      src="/assets/images/checkMark.svg"
+                      alt="check-mark"
+                      height="20px"
+                      width="20px"
+                      fluid
+                    />
+                    &nbsp;&nbsp;&nbsp;We thrive to create the best experience
+                    for everyone who comes to us.
+                  </span>
+                  <br />
+                  <span className="testimonials-single-item">
+                    <Image
+                      className="check-mark-image"
+                      src="/assets/images/checkMark.svg"
+                      alt="check-mark"
+                      height="20px"
+                      width="20px"
+                      fluid
+                    />
+                    &nbsp;&nbsp;&nbsp;We thrive to create the best experience
+                    for everyone who comes to us.
+                  </span>
+                  <br />
+                </div>
+
+                {/* <ul>
                   <li>
                     We thrive to create the best experience for everyone who
                     comes to us.
@@ -137,11 +213,7 @@ export default class Testimonials extends Component {
                     We thrive to create the best experience for everyone who
                     comes to us.
                   </li>
-                  <li>
-                    We thrive to create the best experience for everyone who
-                    comes to us.
-                  </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </Col>

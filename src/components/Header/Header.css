@@ -1,6 +1,6 @@
 .header-base-row {
   margin: 1rem 0 0 0;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 0 0.7rem 1rem rgba(134, 133, 133, 0.836);
   background-color: #5dc7da;
   height: 25rem;
@@ -20,7 +20,4 @@
 
 .header-text-content {
   color: white;
-  /* padding: 1rem;
-  position: relative;
-  min-height: 25rem; */
 }

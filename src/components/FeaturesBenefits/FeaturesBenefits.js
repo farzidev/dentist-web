@@ -35,7 +35,7 @@ export default class FeaturesBenefits extends Component {
           </Col>
           <Col lg={6} md={6}>
             <Row>
-              <Col md={6} className="features-benefits-right-col-1">
+              <Col lg={6} className="features-benefits-right-col-1">
                 <div className="features-benefits-card-1">
                   <img
                     src="/assets/images/time.png"
@@ -69,7 +69,7 @@ export default class FeaturesBenefits extends Component {
                 </div>
               </Col>
               <br />
-              <Col md={6} className="features-benefits-right-col-2">
+              <Col lg={6} className="features-benefits-right-col-2">
                 <div className="features-benefits-card-3">
                   <img
                     src="/assets/images/targetArrow3x.png"
