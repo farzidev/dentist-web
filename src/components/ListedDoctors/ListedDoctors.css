@@ -1,0 +1,33 @@
+.listed-doctors {
+  margin-top: 1rem;
+}
+
+.doctors-card-base-row {
+  display: flex;
+  margin: 0 0 2rem 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0.6rem 0.6rem 0.5rem rgba(134, 133, 133, 0.541),
+    -0.6rem -0.6rem 0.5rem rgba(134, 133, 133, 0.541);
+}
+
+.sort-function {
+  display: flex;
+}
+
+.sort-functionality {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.doctors-image-division {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.votes-book-now-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

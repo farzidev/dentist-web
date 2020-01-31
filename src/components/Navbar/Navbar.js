@@ -6,7 +6,9 @@ export default class NavBar extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand="xl" bg="light" variant="light">
-        <Navbar.Brand href="#home">DentistWeb</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <b>DentistWeb</b>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
