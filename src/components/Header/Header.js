@@ -17,12 +17,12 @@ export default class Header extends Component {
     return (
       <div>
         <Row className="number-and-search">
-          <Col md={8}>
+          <Col xl={8} lg={8} md={8} sm={8} xs={12}>
             <Button className="dentist-web-contact">
               <FontAwesomeIcon icon={faPhoneAlt} /> &nbsp; +123-4567890
             </Button>
           </Col>
-          <Col md={4}>
+          <Col xl={4} lg={4} md={4} sm={4} xs={12}>
             <FormControl
               type="text"
               placeholder="Search for Doctors, Clinics, Hospitals etc..."
@@ -31,7 +31,7 @@ export default class Header extends Component {
           </Col>
         </Row>
 
-        <Carousel slide>
+        <Carousel slide controls={false}>
           <CarouselItem>
             <Row noGutters className="header-base-row">
               <Col
@@ -42,10 +42,15 @@ export default class Header extends Component {
                 xs={12}
                 className="header-left-col"
               >
-                <div className="header-text-content">
-                  <h3>Together We Move Towards</h3>
-                  <span>A Happy Dental Family.</span>
-                  {/* <Button className="header-book-now-btn">BOOK NOW</Button> */}
+                <div className="header-contain">
+                  <div className="header-text-content">
+                    <h3>Together We Move Towards</h3>
+                    <span>A Happy Dental Family.</span>
+                  </div>
+                  <br />
+                  <div>
+                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                  </div>
                 </div>
               </Col>
               <Col
@@ -77,9 +82,15 @@ export default class Header extends Component {
                 xs={12}
                 className="header-left-col"
               >
-                <div className="header-text-content">
-                  <h4>Together We Move Towards</h4>
-                  <span>A Happy Dental Family.</span>
+                <div className="header-contain">
+                  <div className="header-text-content">
+                    <h3>Together We Move Towards</h3>
+                    <span>A Happy Dental Family.</span>
+                  </div>
+                  <br />
+                  <div>
+                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                  </div>
                 </div>
               </Col>
               <Col
@@ -93,8 +104,8 @@ export default class Header extends Component {
                 <div className="side-image-container">
                   <Image
                     src="/assets/images/headerTooth.png"
-                    height="140px"
-                    width="220px"
+                    height="160px"
+                    width="250px"
                     alt="headerTooth"
                   />
                 </div>
@@ -111,9 +122,15 @@ export default class Header extends Component {
                 xs={12}
                 className="header-left-col"
               >
-                <div className="header-text-content">
-                  <h4>Together We Move Towards</h4>
-                  <span>A Happy Dental Family.</span>
+                <div className="header-contain">
+                  <div className="header-text-content">
+                    <h3>Together We Move Towards</h3>
+                    <span>A Happy Dental Family.</span>
+                  </div>
+                  <br />
+                  <div>
+                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                  </div>
                 </div>
               </Col>
               <Col
@@ -127,8 +144,8 @@ export default class Header extends Component {
                 <div className="side-image-container">
                   <Image
                     src="/assets/images/headerTooth.png"
-                    height="140px"
-                    width="220px"
+                    height="160px"
+                    width="250px"
                     alt="headerTooth"
                   />
                 </div>

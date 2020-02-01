@@ -34,3 +34,12 @@
 .search-bar {
   background-color: #f5fdff;
 }
+
+.header-contain {
+  display: block;
+}
+
+.header-book-now-btn {
+  background-color: #fe8369;
+  border: none;
+}

@@ -8,7 +8,14 @@ export default class AboutUs extends Component {
       <div className="about-us-container">
         <div className="about-us-inner-container">
           <Row noGutters className="about-us-container-base-row">
-            <Col lg={10} md={10} className="about-us-left-col">
+            <Col
+              xl={10}
+              lg={10}
+              md={9}
+              sm={12}
+              xs={12}
+              className="about-us-left-col"
+            >
               <div className="about-us-left-col-division">
                 <Row noGutters className="left-col-upper-row">
                   <Col md={12} lg={12}>
@@ -23,8 +30,7 @@ export default class AboutUs extends Component {
                       dsbfksubkuf hsudbfksbh Sed ut perspiciatis unde omnis iste
                       natus error sit voluptatem accusantium doloremque
                       laudantium totam remfffgffff fgaperiam, eaque ipsa quae ab
-                      illo inventore veritatis et quasi architecto
-                      Sbdkfbsdljfbslfbsdb dsbfksubkuf hsudbfksbh.
+                      illo.
                     </span>
                     <br />
                     <br />
@@ -44,7 +50,7 @@ export default class AboutUs extends Component {
                   </Col>
                   <Col lg={3} md={3}>
                     <Image
-                      className="d-none d-lg-block tooth-care-image"
+                      className="d-none d-xl-block tooth-care-image"
                       src="/assets/images/toothCare3x.png"
                       alt="tooth care"
                       fluid
@@ -53,9 +59,9 @@ export default class AboutUs extends Component {
                 </Row>
               </div>
             </Col>
-            <Col lg={2} md={2}>
+            <Col xl={2} lg={2} md={3} sm={0} xs={0}>
               <Image
-                className="d-none d-lg-block three-tooth-image"
+                className="d-none d-md-block three-tooth-image"
                 src="/assets/images/3tooth.png"
                 alt="tooth care"
                 fluid

@@ -23,7 +23,6 @@ export default class Test extends Component {
             items={2}
             loop
             margin={20}
-            nav
             autoPlay
             // options={options}
           >
