@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./FeaturesBenefits.css";
 import { Row, Col, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default class FeaturesBenefits extends Component {
   render() {
@@ -8,32 +10,35 @@ export default class FeaturesBenefits extends Component {
       <div className="features-benefits-container">
         <h3 className="features-benefits-header">Features & Benefits</h3>
         <Row noGutters className="features-benefits-base-row">
-          <Col lg={6} md={6} className="features-benefits-left-col">
+          <Col lg={6} className="features-benefits-left-col">
             <div className="features-benefits-left-col-division">
-              <h4>
+              <h4 className="streamline-process">
                 This is how we <br />
                 streamline our process
               </h4>
               <br />
-              <span>
+              <span className="streamline-content">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium.
               </span>
               <br />
               <br />
-              <span>
+              <span className="streamline-content">
                 Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
                 et quasi architecto quia voluptas sit aspernatur aut odit aut
                 fugit, sed quia consequuntur magni dolores.
               </span>
               <br />
               <br />
-              <Button variant="success">View All &nbsp;--></Button>
+              <Button className="view-all-button">
+                View All &nbsp;
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Button>
               <br />
               <br />
             </div>
           </Col>
-          <Col lg={6} md={6}>
+          <Col lg={6}>
             <Row>
               <Col lg={6} className="features-benefits-right-col-1">
                 <div className="features-benefits-card-1">
@@ -45,7 +50,7 @@ export default class FeaturesBenefits extends Component {
                   />
                   <br />
                   <br />
-                  <h6>Time Efficient</h6>
+                  <h6 className="card-header">Time Efficient</h6>
                   <span className="features-benefits-card-content">
                     Sed ut perspiciatis unde omnis iste natus error sit
                     voluptatem totam rem ab illo veritatis et quasi.
@@ -61,8 +66,8 @@ export default class FeaturesBenefits extends Component {
                   />
                   <br />
                   <br />
-                  <h6>Time Efficient</h6>
-                  <span className="testimonial-card-content">
+                  <h6 className="card-header">Support Team</h6>
+                  <span className="features-benefits-card-content">
                     Sed ut perspiciatis unde omnis iste natus error sit
                     voluptatem totam rem ab illo veritatis et quasi.
                   </span>
@@ -79,8 +84,8 @@ export default class FeaturesBenefits extends Component {
                   />
                   <br />
                   <br />
-                  <h6>Time Efficient</h6>
-                  <span className="testimonial-card-content">
+                  <h6 className="card-header">Target The Best</h6>
+                  <span className="features-benefits-card-content">
                     Sed ut perspiciatis unde omnis iste natus error sit
                     voluptatem totam rem ab illo veritatis et quasi.
                   </span>

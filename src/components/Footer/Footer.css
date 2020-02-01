@@ -4,12 +4,22 @@
   color: white;
 }
 
+.main-working-column {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fe8369;
+}
+
 .footer-social {
+  color: #f0e3d0;
   align-items: left;
+  font-size: 0.9rem;
+  font-family: Muli;
 }
 
 .footer-end {
+  margin-top: 2rem;
   text-align: center;
+  font-family: Muli;
 }
 
 a {
@@ -26,4 +36,39 @@ a:visited:hover {
 
 .footer-subscribe-form {
   padding: 0 1rem 0 1rem;
+}
+
+.links-header {
+  max-width: 1.5rem;
+  border-bottom: 3px solid #fe8369;
+}
+
+.subscribe-header {
+  font-family: Perpetua;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.subscribe-btn {
+  background-color: #fe8369;
+  border: 1px solid #fe8369;
+}
+
+.footer-header {
+  font-family: Perpetua;
+  font-weight: 600;
+  color: white;
+}
+
+.subscribe-form-control {
+  background-color: #4b4b4b;
+}
+
+.subscribe-form-control::placeholder {
+  color: white;
+}
+
+.footer-title {
+  font-family: Perpetua;
+  font-weight: 600;
 }

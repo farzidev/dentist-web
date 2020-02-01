@@ -8,11 +8,6 @@
   border-bottom: 2px solid #fe8369;
 }
 
-/* .featured-services-text {
-  margin-left: 4.5rem;
-  font-size: 15px;
-} */
-
 .services-circles {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.842);
@@ -49,6 +44,7 @@
   color: black;
   font-size: 11px;
   margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .featured-services-mapped-image {
@@ -59,4 +55,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.featured-services-text-content {
+  font-family: Arial, Helvetica, sans-serif;
 }

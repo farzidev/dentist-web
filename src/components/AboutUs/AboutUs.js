@@ -13,7 +13,7 @@ export default class AboutUs extends Component {
                 <Row noGutters className="left-col-upper-row">
                   <Col md={12} lg={12}>
                     <h6>About Us</h6>
-                    <h2>Dentist Finder</h2>
+                    <h2 className="about-us-title">Dentist Finder</h2>
                     <br />
                     <span className="about-us-span-left-col">
                       Sed ut perspiciatis unde omnis iste natus error sit

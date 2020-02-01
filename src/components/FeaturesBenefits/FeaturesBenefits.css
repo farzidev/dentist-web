@@ -4,6 +4,8 @@
 }
 
 .features-benefits-header {
+  font-family: Perpetua;
+  font-weight: 600;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: red;
@@ -22,6 +24,7 @@
 
 .features-benefits-left-col-division {
   text-align: left;
+  padding: 0 4rem 0 4rem;
 }
 
 .features-benefits-card-1 {
@@ -59,4 +62,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.view-all-button {
+  background-color: #fe8369;
+  border: none;
+}
+
+.view-all-button:hover {
+  background-color: #5dc7da;
+}
+
+.streamline-process {
+  font-family: perpetua;
+  color: #4b4b4b;
+  font-weight: 600;
+}
+
+.streamline-content {
+  font-size: 0.9rem;
+  color: #444444;
+  font-family: Muli;
+}
+
+.card-header {
+  padding: 12px 0;
+  background-color: inherit;
+  border: none;
+  font-family: perpetua;
+}
+
+.features-benefits-card-content {
+  font-family: Muli;
 }

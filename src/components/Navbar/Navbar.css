@@ -1,7 +1,25 @@
+.navbar-element {
+  background-color: white;
+}
+
+.hover-class-header:hover {
+  color: #108ea3 !important;
+}
+
 p {
   white-space: nowrap;
 }
 
 .column {
   text-align: center;
+}
+
+.book-now-btn {
+  background-color: #fe8369;
+  border: none;
+  box-shadow: 0 0.3rem 0.5rem rgba(134, 133, 133, 0.836);
+}
+
+.book-now-btn:hover {
+  background-color: #5dc7da !important;
 }

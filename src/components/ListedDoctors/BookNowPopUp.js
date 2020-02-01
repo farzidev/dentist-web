@@ -38,7 +38,7 @@ export default class BookNowPopUp extends Component {
                 <Form.Control type="password" placeholder="Code" />
               </Form.Group>
 
-              <Button variant="primary" onClick="codeverify();">
+              <Button variant="success" onClick="codeverify();">
                 Verify Code
               </Button>
             </Form>

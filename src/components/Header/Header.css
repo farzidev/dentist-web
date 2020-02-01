@@ -21,3 +21,16 @@
 .header-text-content {
   color: white;
 }
+
+.dentist-web-contact {
+  background-color: #fe8369;
+  border: none;
+}
+
+.dentist-web-contact:hover {
+  background-color: #5dc7da !important;
+}
+
+.search-bar {
+  background-color: #f5fdff;
+}
