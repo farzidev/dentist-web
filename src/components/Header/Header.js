@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Image, Button } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import "./Header.css";
 
 export default class Header extends Component {

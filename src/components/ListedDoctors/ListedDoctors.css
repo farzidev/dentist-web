@@ -5,10 +5,14 @@
 .doctors-card-base-row {
   display: flex;
   margin: 0 0 2rem 0.5rem;
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 5px;
   box-shadow: 0.6rem 0.6rem 0.5rem rgba(134, 133, 133, 0.541),
     -0.6rem -0.6rem 0.5rem rgba(134, 133, 133, 0.541);
+}
+
+.doctors-degree-field {
+  color: #0283a2;
 }
 
 .sort-function {
@@ -21,13 +25,28 @@
 }
 
 .doctors-image-division {
+  max-height: 140px;
+  max-width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.votes-book-now-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.votes-book-now {
+  position: relative;
+  text-align: center;
+}
+
+.thumbsup-votes {
+  background-color: #c9f7ff;
+  border-radius: 17px;
+  padding: 0.5rem 1rem;
+}
+
+.book-now-button {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  background-color: #fe8369;
+  border: 1px solid #fe8369;
 }

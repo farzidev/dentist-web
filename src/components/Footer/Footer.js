@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import { Container, Col, Row, Form, Button } from "react-bootstrap";
+import { Col, Row, Form, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
