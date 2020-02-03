@@ -52,6 +52,7 @@ a:visited:hover {
 .subscribe-btn {
   background-color: #fe8369;
   border: 1px solid #fe8369;
+  margin-top: 0.5rem;
 }
 
 .footer-header {
@@ -62,6 +63,7 @@ a:visited:hover {
 
 .subscribe-form-control {
   background-color: #4b4b4b;
+  margin-top: 0.5rem;
 }
 
 .subscribe-form-control::placeholder {

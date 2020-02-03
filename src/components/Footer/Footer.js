@@ -18,7 +18,7 @@ export default class Footer extends Component {
           <Col md={10} className="main-working-column">
             <div>
               <Row noGutters>
-                <Col md={3} className="footer-social">
+                <Col md={3} sm={12} xs={12} className="footer-social">
                   <div>
                     <img
                       className="footer-teeth-image"
@@ -53,7 +53,7 @@ export default class Footer extends Component {
                     />
                   </div>
                 </Col>
-                <Col md={2} className="footer-social">
+                <Col md={2} sm={6} xs={6} className="footer-social">
                   <h6 className="footer-header">
                     Quick Links
                     <div className="links-header">&nbsp;</div>
@@ -71,7 +71,7 @@ export default class Footer extends Component {
                   <a href="#">-&nbsp;&nbsp;Contact Us</a>
                   <br />
                 </Col>
-                <Col md={2} className="footer-social">
+                <Col md={2} sm={6} xs={6} className="footer-social">
                   <h6 className="footer-header">
                     Sitemap
                     <div className="links-header">&nbsp;</div>
@@ -88,7 +88,7 @@ export default class Footer extends Component {
                   <a href="#">-&nbsp;&nbsp;Ipsum</a>
                   <br />
                 </Col>
-                <Col md={2} className="footer-social">
+                <Col md={2} sm={6} xs={6} className="footer-social">
                   <h6 className="footer-header">
                     Discover
                     <div className="links-header">&nbsp;</div>
@@ -103,7 +103,7 @@ export default class Footer extends Component {
                   <a href="#">-&nbsp;&nbsp;Ipsum</a>
                   <br />
                 </Col>
-                <Col md={3}>
+                <Col md={3} sm={6} xs={6}>
                   <div>
                     <h6 className="subscribe-header">
                       Subscribe
@@ -114,7 +114,7 @@ export default class Footer extends Component {
                     <div className="footer-subscribe-form">
                       <Form>
                         <Form.Row controlId="formPlaintextEmail">
-                          <Col sm="10">
+                          <Col xl={8} lg={8} md={8} sm={8} xs={12}>
                             <Form.Control
                               type="text"
                               placeholder="E-mail"
@@ -122,7 +122,7 @@ export default class Footer extends Component {
                               className="subscribe-form-control"
                             />
                           </Col>
-                          <Col sm="2">
+                          <Col xl={4} lg={4} md={4} sm={4} xs={12}>
                             <Button size="sm" className="subscribe-btn">
                               Subscribe
                             </Button>

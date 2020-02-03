@@ -86,7 +86,7 @@ export default class ListedDoctors extends Component {
       <Container fluid className="doctors-list-container">
         <div className="sort-function">
           <span>We have found the best doctors for you in your area.</span>
-          <Dropdown className="sort-functionality">
+          <Dropdown className="sort-functionality" drop="left ">
             <Dropdown.Toggle variant="light" id="dropdown-basic">
               Sort By
             </Dropdown.Toggle>
