@@ -14,6 +14,23 @@ import "./Testimonial.css";
 // };
 
 export default class Test extends Component {
+  state = {
+    responsive: {
+      0: {
+        items: 1,
+        loop: true
+      },
+      481: {
+        items: 2,
+        loop: true
+      },
+      1000: {
+        items: 2,
+        loop: true
+      }
+    }
+  };
+
   render() {
     return (
       <div className="testimonials-container">
@@ -21,9 +38,10 @@ export default class Test extends Component {
           <OwlCarousel
             className="owl-theme"
             items={2}
-            loop
+            loop={true}
             margin={20}
-            autoPlay
+            autoPlay={true}
+            responsive={this.state.responsive}
             // options={options}
           >
             <div class="item">
