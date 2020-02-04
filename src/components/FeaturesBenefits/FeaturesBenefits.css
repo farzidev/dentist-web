@@ -8,7 +8,7 @@
   font-weight: 600;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: rgb(247, 49, 49);
 }
 
 .features-benefits-base-row {
@@ -109,7 +109,14 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .features-benefits-card-3 {
+@media (min-width: 320px) and (max-width: 480px) {
+  .features-benefits-left-col-division {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .features-benefits-left-col-division {
+    padding: 0 1rem;
   }
 }

@@ -25,6 +25,7 @@
 .dentist-web-contact {
   background-color: #fe8369;
   border: none;
+  margin-top: 0.5rem;
 }
 
 .dentist-web-contact:hover {
@@ -33,6 +34,7 @@
 
 .search-bar {
   background-color: #f5fdff;
+  margin-top: 0.5rem;
 }
 
 .header-contain {

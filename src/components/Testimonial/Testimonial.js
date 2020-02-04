@@ -47,7 +47,11 @@ export default class Test extends Component {
             <div class="item">
               <div className="testimonial-card testimonial-card-1">
                 <div className="image-division">
-                  <Image src="/assets/images/face.png" height="70" width="70" />
+                  <Image
+                    className="face-image"
+                    src="/assets/images/face.png"
+                    fluid
+                  />
                 </div>
                 <br />
                 <br />
@@ -70,7 +74,12 @@ export default class Test extends Component {
             <div class="item">
               <div className="testimonial-card testimonial-card-2">
                 <div className="image-division">
-                  <Image src="/assets/images/face.png" height="70" width="70" />
+                  <Image
+                    className="face-image"
+                    src="/assets/images/face.png"
+                    height="70"
+                    width="70"
+                  />
                 </div>
                 <br />
                 <br />
@@ -93,7 +102,12 @@ export default class Test extends Component {
             <div class="item">
               <div className="testimonial-card testimonial-card-3">
                 <div className="image-division">
-                  <Image src="/assets/images/face.png" height="70" width="70" />
+                  <Image
+                    className="face-image"
+                    src="/assets/images/face.png"
+                    height="70"
+                    width="70"
+                  />
                 </div>
                 <br />
                 <br />
@@ -116,7 +130,12 @@ export default class Test extends Component {
             <div class="item">
               <div className="testimonial-card">
                 <div className="image-division">
-                  <Image src="/assets/images/face.png" height="70" width="70" />
+                  <Image
+                    className="face-image"
+                    src="/assets/images/face.png"
+                    height="70"
+                    width="70"
+                  />
                 </div>
                 <br />
                 <br />
@@ -139,7 +158,12 @@ export default class Test extends Component {
             <div class="item">
               <div className="testimonial-card">
                 <div className="image-division">
-                  <Image src="/assets/images/face.png" height="70" width="70" />
+                  <Image
+                    className="face-image"
+                    src="/assets/images/face.png"
+                    height="70"
+                    width="70"
+                  />
                 </div>
                 <br />
                 <br />

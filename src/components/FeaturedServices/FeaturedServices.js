@@ -30,7 +30,14 @@ export default class FeaturedServices extends Component {
                 <Row className="featured-services-items-images">
                   {this.state.items.map((item, index) => {
                     return (
-                      <Col xl={2} lg={2} md={4} sm={6} xs={12}>
+                      <Col
+                        xl={2}
+                        lg={2}
+                        md={4}
+                        sm={6}
+                        xs={12}
+                        className="services-circle-column"
+                      >
                         <div className="services-circles">
                           <Image
                             className="services-circle-image"
@@ -50,7 +57,14 @@ export default class FeaturedServices extends Component {
                 <Row className="featured-services-items-images">
                   {this.state.items.map((item, index) => {
                     return (
-                      <Col xl={2} lg={2} md={4} sm={6} xs={12}>
+                      <Col
+                        xl={2}
+                        lg={2}
+                        md={4}
+                        sm={6}
+                        xs={12}
+                        className="services-circle-column"
+                      >
                         <div className="services-circles">
                           <Image
                             className="services-circle-image"

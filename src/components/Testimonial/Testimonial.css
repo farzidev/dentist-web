@@ -46,6 +46,11 @@
   padding: 0 4.2rem;
 }
 
+.face-image {
+  max-width: 5rem;
+  margin: 0 auto;
+}
+
 /*   ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px*/
 @media (min-width: 1025px) and (max-width: 1268px) {
   .testimonial-text-container {
@@ -70,10 +75,7 @@
     max-width: 15rem !important;
   }
 }
-/*   ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
-/*   ##Device = Low Resolution Tablets, Mobiles (Landscape)  ##Screen = B/w 481px to 767px*/
+
 @media (min-width: 481px) and (max-width: 767px) {
   .testimonials-container {
     display: block;
@@ -92,18 +94,16 @@
   .owl-item {
     max-width: 25rem !important;
   }
+
   .testimonial-card {
     margin: 0 auto;
   }
+
+  .testimonial-text-inner-container {
+    margin: 0;
+  }
 }
 
-/* @media (min-width: 481px) and (max-width: 650px) {
-  .testimonial-text-container {
-    display: block;
-    max-width: 100%;
-  }
-} */
-/*   ##Device = Most of the Smartphones Mobiles (Portrait)  ##Screen = B/w 320px to 479px*/
 @media (min-width: 320px) and (max-width: 480px) {
   .testimonials-container {
     display: block;
@@ -126,7 +126,7 @@
     margin: 0 auto;
   }
 
-  /* .owl-item {
-    max-width: 90rem !important;
-  } */
+  .testimonial-text-inner-container {
+    margin: 0;
+  }
 }

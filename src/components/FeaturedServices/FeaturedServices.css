@@ -8,6 +8,10 @@
   border-bottom: 2px solid #fe8369;
 }
 
+.services-circle-column {
+  margin-top: 1rem;
+}
+
 .services-circles {
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.842);
