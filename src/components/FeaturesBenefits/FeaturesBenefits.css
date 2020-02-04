@@ -58,10 +58,7 @@
 }
 
 .features-benefits-right-col-2 {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .view-all-button {
@@ -94,4 +91,25 @@
 
 .features-benefits-card-content {
   font-family: Muli;
+}
+
+@media (min-width: 1026px) and (max-width: 1440px) {
+  .features-benefits-right-col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1268px) {
+  .features-benefits-right-col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features-benefits-card-3 {
+  }
 }

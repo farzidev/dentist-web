@@ -3,6 +3,7 @@ import NavBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ListedDoctors from "../ListedDoctors/ListedDoctors";
 import { Row, Col, Image } from "react-bootstrap";
+import "./FoundDoctors.css";
 
 export default class FoundDoctors extends Component {
   render() {
@@ -42,7 +43,11 @@ export default class FoundDoctors extends Component {
             <div className="consult-a-doctor">
               <Row>
                 <Col md={3}>
-                  <Image src="/assets/images/consultDoctor.png" fluid />
+                  <Image
+                    className="consult-doctor-image"
+                    src="/assets/images/consultDoctor.png"
+                    fluid
+                  />
                 </Col>
                 <Col md={9}>
                   <h3>Consult a doctor online</h3>

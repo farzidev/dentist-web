@@ -40,7 +40,14 @@ export default class FeaturesBenefits extends Component {
           </Col>
           <Col lg={6}>
             <Row>
-              <Col lg={6} className="features-benefits-right-col-1">
+              <Col
+                xl={6}
+                lg={6}
+                md={12}
+                sm={12}
+                xs={12}
+                className="features-benefits-right-col-1"
+              >
                 <div className="features-benefits-card-1">
                   <img
                     src="/assets/images/time.png"
@@ -74,7 +81,14 @@ export default class FeaturesBenefits extends Component {
                 </div>
               </Col>
               <br />
-              <Col lg={6} className="features-benefits-right-col-2">
+              <Col
+                xl={6}
+                lg={6}
+                md={12}
+                sm={12}
+                xs={12}
+                className="features-benefits-right-col-2"
+              >
                 <div className="features-benefits-card-3">
                   <img
                     src="/assets/images/targetArrow3x.png"

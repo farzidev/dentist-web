@@ -30,6 +30,7 @@ export default class ListedDoctors extends Component {
   closeModal = () => this.setState({ showModal: false });
 
   render() {
+    //storing the list of doctors inside a single array.
     let doctorsList = this.state.items.map((item, index) => {
       return (
         <Col md={12} className="doctor-cards-container">

@@ -36,3 +36,15 @@
 .tooth-care-image {
   margin-left: 2rem;
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-us-left-col-division {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .about-us-left-col-division {
+    padding: 1rem;
+  }
+}
