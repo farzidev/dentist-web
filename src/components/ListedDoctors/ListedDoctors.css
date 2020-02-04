@@ -7,8 +7,8 @@
   margin: 0 0 2rem 0.5rem;
   padding: 1rem 0;
   border-radius: 5px;
-  box-shadow: 0.6rem 0.6rem 0.5rem rgba(134, 133, 133, 0.541),
-    -0.6rem -0.6rem 0.5rem rgba(134, 133, 133, 0.541);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(134, 133, 133, 0.253),
+    -0.3rem -0.3rem 0.3rem rgba(134, 133, 133, 0.205);
 }
 
 .doctors-degree-field {
@@ -24,17 +24,18 @@
   margin-right: 0;
 }
 
-.doctors-image-division {
-  max-height: 140px;
-  max-width: 140px;
+.doctors-image-column {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  max-height: 140px;
+  max-width: 140px;
 }
 
 .votes-book-now {
   position: relative;
-  text-align: center;
+  text-align: right;
 }
 
 .thumbsup-votes {
@@ -45,8 +46,55 @@
 
 .book-now-button {
   position: absolute;
-  left: 20%;
+  right: 10%;
   bottom: 0;
   background-color: #fe8369;
   border: 1px solid #fe8369;
+}
+
+.best-doctors-line {
+  opacity: 0.65;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .doctors-info-division {
+    padding: 1rem;
+  }
+
+  .doctors-name-designation {
+    text-align: center;
+  }
+
+  .book-now-votes-division {
+    display: flex;
+  }
+
+  .book-now-button {
+    right: 15px;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .doctors-info-division {
+    padding: 1rem;
+  }
+
+  .doctors-name-designation {
+    text-align: center;
+  }
+
+  .book-now-votes-division {
+    display: flex;
+  }
+
+  .book-now-button {
+    right: 15px;
+    margin: 0 !important;
+  }
 }
