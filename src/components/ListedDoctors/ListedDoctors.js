@@ -104,7 +104,7 @@ export default class ListedDoctors extends Component {
                 <ButtonToolbar>
                   <Button
                     className="book-now-button"
-                    size="sm  "
+                    size="sm"
                     onClick={() => this.setState({ showModal: true })}
                   >
                     BOOK NOW

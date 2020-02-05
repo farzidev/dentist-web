@@ -17,3 +17,47 @@
 .consult-doctor-text-content {
   padding: 1rem;
 }
+
+.root-canal-content {
+  font-size: 0.8rem;
+}
+
+.common-issues-content {
+  font-size: 0.8rem;
+}
+
+.read-more {
+  color: #356baa;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: #356baa !important;
+}
+
+.read-more::after {
+  color: violet !important;
+}
+
+.consult-doctor-image-container {
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .consult-doctor-image {
+    height: 70px;
+    width: 70px;
+    display: block;
+  }
+
+  .consult-doctor-text-content {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .consult-doctor-image {
+    height: 50px;
+    width: 50px;
+  }
+}

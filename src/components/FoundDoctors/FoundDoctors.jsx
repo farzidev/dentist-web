@@ -26,35 +26,53 @@ export default class FoundDoctors extends Component {
                     src="/assets/images/maskGroup3x.png"
                     fluid
                   />
-                  <span>
+                  <div className="root-canal-content">
                     <h4 className="side-heading">What is Root Canal?</h4>
-                    <br />A root canal is a treatment used to repair and save a
-                    tooth that is badly decayed or becomes infected. During a
-                    root canal procedure, the nerve and pulp are removed and the
-                    inside of the tooth is cleaned and sealed. Without
-                    treatment, the tissue surrounding the tooth will become
-                    infected and Read More…
-                  </span>
+                    <br />
+                    <span>
+                      A root canal is a treatment used to repair and save a
+                      tooth that is badly decayed or becomes infected. During a
+                      root canal procedure, the nerve and pulp are removed and
+                      the inside of the tooth is cleaned and sealed. Without
+                      treatment, the tissue surrounding the tooth will become
+                      infected and{" "}
+                      <a
+                        className="read-more"
+                        href="https://en.wikipedia.org/wiki/Root_canal"
+                      >
+                        Read More…
+                      </a>
+                    </span>
+                  </div>
                   <br />
                   <br />
-                  <span>
+                  <div className="common-issues-content">
                     <h4 className="side-heading">Common Issues</h4>
                     <br />
                     Swelling that may spread to other areas Bleeding Gums
                     Boneless around tip of root
-                  </span>
+                  </div>
                 </div>
                 <br />
                 <div className="consult-a-doctor">
                   <Row>
-                    <Col md={3}>
+                    <Col
+                      xl={4}
+                      lg={12}
+                      md={12}
+                      className="consult-doctor-image-container"
+                    >
                       <Image
                         className="consult-doctor-image"
                         src="/assets/images/consultDoctor.png"
-                        fluid
                       />
                     </Col>
-                    <Col md={9} className="consult-doctor-text-content">
+                    <Col
+                      xl={8}
+                      lg={12}
+                      md={12}
+                      className="consult-doctor-text-content"
+                    >
                       <h3>Consult a doctor online</h3>
                       <div className="side-verified-doctors">
                         Verified Doctors
