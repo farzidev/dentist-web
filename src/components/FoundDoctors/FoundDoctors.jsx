@@ -16,10 +16,10 @@ export default class FoundDoctors extends Component {
           <Col md={1}></Col>
           <Col md={10}>
             <Row className="base-row">
-              <Col md={8} className="listed-doctors-left-col">
+              <Col md={9} className="listed-doctors-left-col">
                 <ListedDoctors />
               </Col>
-              <Col md={4} className="listed-doctors-right-col">
+              <Col md={3} className="listed-doctors-right-col">
                 <div className="right-content-container">
                   <Image
                     className="free-medical-camp-image"

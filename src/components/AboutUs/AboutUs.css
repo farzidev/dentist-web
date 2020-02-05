@@ -37,6 +37,14 @@
   margin-left: 2rem;
 }
 
+.three-tooth {
+  height: 100%;
+  background-image: url(/assets/images/3tooth.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .about-us-left-col-division {
     padding: 1rem;

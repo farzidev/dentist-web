@@ -24,6 +24,10 @@ export default class Test extends Component {
         items: 2,
         loop: true
       },
+      768: {
+        items: 3,
+        loop: true
+      },
       1000: {
         items: 2,
         loop: true
@@ -38,9 +42,9 @@ export default class Test extends Component {
           <OwlCarousel
             className="owl-theme"
             items={2}
-            loop={true}
+            loop
             margin={20}
-            autoPlay={true}
+            autoPlay
             responsive={this.state.responsive}
             // options={options}
           >
@@ -50,7 +54,8 @@ export default class Test extends Component {
                   <Image
                     className="face-image"
                     src="/assets/images/face.png"
-                    fluid
+                    height="70"
+                    width="70"
                   />
                 </div>
                 <br />

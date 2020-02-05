@@ -56,6 +56,9 @@
   .testimonial-text-container {
     max-width: 37rem;
   }
+  .testimonial-card {
+    min-height: 25rem !important;
+  }
 }
 /*   ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -64,7 +67,7 @@
   }
 
   .owl-theme {
-    width: 97% !important;
+    width: 100% !important;
   }
 
   .testimonial-text-container {
@@ -74,6 +77,10 @@
   .owl-item {
     max-width: 15rem !important;
   }
+
+  .testimonial-card {
+    min-height: 25rem !important;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -82,7 +89,7 @@
   }
 
   .owl-theme {
-    width: 97% !important;
+    width: 100% !important;
   }
 
   .testimonial-text-container {

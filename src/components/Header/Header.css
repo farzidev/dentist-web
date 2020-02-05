@@ -45,3 +45,9 @@
   background-color: #fe8369;
   border: none;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header-left-col {
+    padding: 0 0.5rem !important;
+  }
+}

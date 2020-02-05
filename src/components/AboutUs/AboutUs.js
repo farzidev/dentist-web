@@ -60,12 +60,13 @@ export default class AboutUs extends Component {
               </div>
             </Col>
             <Col xl={2} lg={2} md={3} sm={0} xs={0}>
-              <Image
+              {/* <Image
                 className="d-none d-md-block three-tooth-image"
                 src="/assets/images/3tooth.png"
                 alt="tooth care"
                 fluid
-              />
+              /> */}
+              <div className="three-tooth"></div>
             </Col>
           </Row>
         </div>
