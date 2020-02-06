@@ -39,6 +39,8 @@ export default class FoundDoctors extends Component {
                       <a
                         className="read-more"
                         href="https://en.wikipedia.org/wiki/Root_canal"
+                        rel="noopener noreferrer"
+                        target="_blank"
                       >
                         Read More…
                       </a>
