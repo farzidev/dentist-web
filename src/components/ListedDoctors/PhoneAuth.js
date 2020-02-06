@@ -8,6 +8,13 @@ import "./PhoneAuth.css";
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 class PhoneAuth extends Component {
+  constructor() {
+    super();
+    this.state = {
+      phone: ""
+    };
+  }
+
   phoneAuth = () => {
     console.log("Phone authentication is getting called");
     const recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
@@ -15,7 +22,7 @@ class PhoneAuth extends Component {
     );
     var provider = new firebase.auth.PhoneAuthProvider();
     provider
-      .verifyPhoneNumber("+918860649734", recaptchaVerifier)
+      .verifyPhoneNumber(this.state.phone, recaptchaVerifier)
       .then(function(verificationId) {
         var verificationCode = window.prompt(
           "Please enter the verification " +
@@ -32,13 +39,23 @@ class PhoneAuth extends Component {
       });
   };
 
+  handleChange = event => {
+    this.setState({ phone: event.target.value });
+  };
+
   render() {
     return (
       <div className="phone-authentication-page">
         <div className="phone-authentication-container">
           <h3>Verify your phone</h3>
           <form>
-            <input type="text" id="number" placeholder="+923********" />
+            <input
+              type="text"
+              id="number"
+              placeholder="+923********"
+              value={this.state.phone}
+              onChange={this.handleChange}
+            />
             <div id="recaptcha-container"></div>
             <button type="button" onClick={() => this.phoneAuth()}>
               SendCode
