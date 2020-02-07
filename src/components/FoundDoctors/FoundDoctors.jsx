@@ -10,7 +10,9 @@ export default class FoundDoctors extends Component {
     return (
       <div className="found-doctors">
         <NavBar />
-        <div className="blue-line"></div>
+        <div className="blue-line">
+          <h5>Home > Doctors near Tomken Road</h5>
+        </div>
 
         <Row>
           <Col md={1}></Col>
@@ -93,7 +95,6 @@ export default class FoundDoctors extends Component {
           </Col>
           <Col md={1}></Col>
         </Row>
-
         <Footer />
       </div>
     );

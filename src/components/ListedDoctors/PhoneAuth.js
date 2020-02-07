@@ -34,7 +34,7 @@ class PhoneAuth extends Component {
         );
       })
       .then(function(phoneCredential) {
-        console.log("Credentials loaded");
+        console.log("User Authenticated");
         return firebase.auth().signInWithCredential(phoneCredential);
       });
   };
@@ -52,7 +52,7 @@ class PhoneAuth extends Component {
             <input
               type="text"
               id="number"
-              placeholder="+923********"
+              placeholder="+919874******"
               value={this.state.phone}
               onChange={this.handleChange}
             />

@@ -15,8 +15,7 @@ import {
   faGraduationCap,
   faStar
 } from "@fortawesome/free-solid-svg-icons";
-import PhoneAuth from "./PhoneAuth";
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import BookNowPopUp from "./BookNowPopUp";
 
 export default class ListedDoctors extends Component {
   constructor() {
@@ -102,21 +101,20 @@ export default class ListedDoctors extends Component {
                   <FontAwesomeIcon icon={faThumbsUp} color="green" />
                   &nbsp;96% votes
                 </span>
-                <Link to={`/phoneauth`}>
-                  <ButtonToolbar>
-                    <Button
-                      className="book-now-button"
-                      size="sm"
-                      onClick={() => this.setState({ showModal: true })}
-                    >
-                      BOOK NOW
-                    </Button>
-                    {/* <PhoneAuth
+                {/*rendering the book-now-pop-up for the selected doctor.*/}
+                <ButtonToolbar>
+                  <Button
+                    className="book-now-button"
+                    size="sm"
+                    onClick={() => this.setState({ showModal: true })}
+                  >
+                    BOOK NOW
+                  </Button>
+                  <BookNowPopUp
                     show={this.state.showModal}
                     onHide={this.closeModal}
-                  /> */}
-                  </ButtonToolbar>
-                </Link>
+                  />
+                </ButtonToolbar>
               </div>
             </Col>
           </Row>
