@@ -1,5 +1,11 @@
 .phone-authentication-page {
+  background-color: beige;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.number-input-phone-auth {
+  margin-bottom: 1rem;
 }

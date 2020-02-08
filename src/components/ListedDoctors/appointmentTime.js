@@ -36,22 +36,26 @@ export default class appointmentTime extends Component {
           <Col md={1}></Col>
           <Col md={10}>
             <Row noGutters>
-              <Col md={2}>
-                <span>Morning</span>
-              </Col>
-              {this.state.morningTime.map(item => {
-                return (
+              <Col md={12} sm={4} xs={4}>
+                <Row noGutters>
                   <Col md={2}>
-                    <Button
-                      size="sm"
-                      disabled={item.isBooked}
-                      variant="outline-dark"
-                    >
-                      {item.timing}
-                    </Button>
+                    <span>Morning</span>
                   </Col>
-                );
-              })}
+                  {this.state.morningTime.map(item => {
+                    return (
+                      <Col md={2}>
+                        <Button
+                          size="sm"
+                          disabled={item.isBooked}
+                          variant="outline-dark"
+                        >
+                          {item.timing}
+                        </Button>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
             </Row>
           </Col>
           <Col md={1}></Col>
@@ -61,22 +65,26 @@ export default class appointmentTime extends Component {
           <Col md={1}></Col>
           <Col md={10}>
             <Row noGutters>
-              <Col md={2}>
-                <span>Afternoon</span>
-              </Col>
-              {this.state.afternoonTime.map(item => {
-                return (
+              <Col md={12} sm={4} xs={4}>
+                <Row noGutters>
                   <Col md={2}>
-                    <Button
-                      size="sm"
-                      disabled={item.isBooked}
-                      variant="outline-dark"
-                    >
-                      {item.timing}
-                    </Button>
+                    <span>Afternoon</span>
                   </Col>
-                );
-              })}
+                  {this.state.afternoonTime.map(item => {
+                    return (
+                      <Col md={2}>
+                        <Button
+                          size="sm"
+                          disabled={item.isBooked}
+                          variant="outline-dark"
+                        >
+                          {item.timing}
+                        </Button>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
             </Row>
           </Col>
           <Col md={1}></Col>
@@ -86,22 +94,26 @@ export default class appointmentTime extends Component {
           <Col md={1}></Col>
           <Col md={10}>
             <Row noGutters>
-              <Col md={2}>
-                <span>Evening</span>
-              </Col>
-              {this.state.eveningTime.map(item => {
-                return (
+              <Col md={12} sm={4} xs={4}>
+                <Row noGutters>
                   <Col md={2}>
-                    <Button
-                      size="sm"
-                      disabled={item.isBooked}
-                      variant="outline-dark"
-                    >
-                      {item.timing}
-                    </Button>
+                    <span>Evening</span>
                   </Col>
-                );
-              })}
+                  {this.state.eveningTime.map(item => {
+                    return (
+                      <Col md={2}>
+                        <Button
+                          size="sm"
+                          disabled={item.isBooked}
+                          variant="outline-dark"
+                        >
+                          {item.timing}
+                        </Button>
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </Col>
             </Row>
           </Col>
           <Col md={1}></Col>

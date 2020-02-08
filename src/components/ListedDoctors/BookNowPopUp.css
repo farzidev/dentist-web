@@ -5,3 +5,11 @@
 /* .MuiTabs-root {
   background-color: rgb(221, 250, 252) !important;
 } */
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.popup-card-base-row {
+  padding: 1rem;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, Button, Row, Col, Image } from "react-bootstrap";
+import { Modal, Button, Row, Col, Image, ButtonToolbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
@@ -10,6 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import "./BookNowPopUp.css";
 import ScrollableTabsButtonAuto from "./ScrollableTabs";
+import OTPModal from "../Pop-Ups/OtpPopUp";
 
 export default class BookNowPopUp extends Component {
   constructor() {
@@ -22,9 +23,11 @@ export default class BookNowPopUp extends Component {
       languages: "English, Cantonese, Mandarin",
       field: "Dentist, Dental Surgeon, Implantologist",
       items: [0, 1, 2],
-      showModal: false
+      showOTPModal: false
     };
   }
+
+  closeOTPModal = () => this.setState({ showOTPModal: false });
 
   render() {
     return (
@@ -119,9 +122,20 @@ export default class BookNowPopUp extends Component {
             </div>
           </Modal.Body>
           <Modal.Footer>
-            <Link to={`/phoneAuth`}>
-              <Button variant="danger">Confirm Booking</Button>
-            </Link>
+            {/* <Link to={`/phoneAuth`}> */}
+            <ButtonToolbar>
+              <Button
+                variant="danger"
+                onClick={() => this.setState({ showOTPModal: true })}
+              >
+                Confirm Booking
+              </Button>
+              <OTPModal
+                show={this.state.showOTPModal}
+                onHide={this.closeOTPModal}
+              />
+            </ButtonToolbar>
+            {/* </Link> */}
           </Modal.Footer>
         </Modal>
       </div>

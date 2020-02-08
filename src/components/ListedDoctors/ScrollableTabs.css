@@ -2,3 +2,11 @@
   background-color: rgba(235, 255, 255, 0.932) !important;
   margin: 0 !important;
 }
+
+.MuiAppBar-positionStatic {
+  color: rgb(0, 0, 0);
+}
+
+.test {
+  padding: 0 !important;
+}

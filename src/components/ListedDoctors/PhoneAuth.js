@@ -4,6 +4,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "../../firebaseConfig";
 import "./PhoneAuth.css";
+import { Button } from "react-bootstrap";
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -18,7 +19,10 @@ class PhoneAuth extends Component {
   phoneAuth = () => {
     console.log("Phone authentication is getting called");
     const recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-      "recaptcha-container"
+      "recaptcha-container",
+      {
+        size: "invisible"
+      }
     );
     var provider = new firebase.auth.PhoneAuthProvider();
     provider
@@ -47,14 +51,16 @@ class PhoneAuth extends Component {
     return (
       <div className="phone-authentication-page">
         <div className="phone-authentication-container">
-          <h3>Verify your phone</h3>
+          <h6>Verify your phone number</h6>
+          <br />
           <form>
             <input
               type="text"
               id="number"
-              placeholder="+919874******"
+              placeholder="+9198******01"
               value={this.state.phone}
               onChange={this.handleChange}
+              className="number-input-phone-auth"
             />
             <div id="recaptcha-container"></div>
             <button type="button" onClick={() => this.phoneAuth()}>
