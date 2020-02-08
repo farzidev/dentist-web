@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Container } from "react-bootstrap";
 
 export default class appointmentTime extends Component {
   constructor() {
@@ -23,7 +23,7 @@ export default class appointmentTime extends Component {
         { timing: "06:00 PM", isBooked: true },
         { timing: "06:30 PM", isBooked: false },
         { timing: "07:00 PM", isBooked: true },
-        { timing: "07:30 PM", isBooked: true },
+        { timing: "07:30 PM", isBooked: false },
         { timing: "08:00 PM", isBooked: true }
       ]
     };
@@ -31,13 +31,13 @@ export default class appointmentTime extends Component {
 
   render() {
     return (
-      <div>
+      <Container fluid>
         <Row>
           <Col md={1}></Col>
           <Col md={10}>
-            <Row noGutters>
+            <Row>
               <Col md={12} sm={4} xs={4}>
-                <Row noGutters>
+                <Row>
                   <Col md={2}>
                     <span>Morning</span>
                   </Col>
@@ -64,9 +64,9 @@ export default class appointmentTime extends Component {
         <Row>
           <Col md={1}></Col>
           <Col md={10}>
-            <Row noGutters>
+            <Row>
               <Col md={12} sm={4} xs={4}>
-                <Row noGutters>
+                <Row>
                   <Col md={2}>
                     <span>Afternoon</span>
                   </Col>
@@ -93,9 +93,9 @@ export default class appointmentTime extends Component {
         <Row>
           <Col md={1}></Col>
           <Col md={10}>
-            <Row noGutters>
+            <Row>
               <Col md={12} sm={4} xs={4}>
-                <Row noGutters>
+                <Row>
                   <Col md={2}>
                     <span>Evening</span>
                   </Col>
@@ -118,7 +118,7 @@ export default class appointmentTime extends Component {
           </Col>
           <Col md={1}></Col>
         </Row>
-      </div>
+      </Container>
     );
   }
 }

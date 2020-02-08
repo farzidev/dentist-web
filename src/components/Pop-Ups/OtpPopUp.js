@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Modal, Button } from "react-bootstrap";
-import PhoneAuth from "../ListedDoctors/PhoneAuth";
+import { Modal } from "react-bootstrap";
+import PhoneAuth from "../ListedDoctors/PhoneAuth/PhoneAuth";
 
 export default class OTPModal extends Component {
   constructor() {
@@ -27,9 +27,6 @@ export default class OTPModal extends Component {
           <Modal.Body>
             <PhoneAuth />
           </Modal.Body>
-          {/* <Modal.Footer>
-            <Button variant="danger" onClick={this.props.onHide}></Button>
-          </Modal.Footer> */}
         </Modal>
       </div>
     );

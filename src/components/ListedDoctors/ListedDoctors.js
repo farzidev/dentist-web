@@ -15,7 +15,7 @@ import {
   faGraduationCap,
   faStar
 } from "@fortawesome/free-solid-svg-icons";
-import BookNowPopUp from "./BookNowPopUp";
+import BookNowPopUp from "./BookNowPopUp/BookNowPopUp";
 
 export default class ListedDoctors extends Component {
   constructor() {

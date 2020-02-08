@@ -7,10 +7,9 @@ import {
   faStar,
   faLanguage
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import "./BookNowPopUp.css";
-import ScrollableTabsButtonAuto from "./ScrollableTabs";
-import OTPModal from "../Pop-Ups/OtpPopUp";
+import ScrollableTabsButton from "./ScrollableTabs/ScrollableTabs";
+import OTPModal from "../../Pop-Ups/OtpPopUp";
 
 export default class BookNowPopUp extends Component {
   constructor() {
@@ -118,7 +117,7 @@ export default class BookNowPopUp extends Component {
             </Row>
 
             <div className="test">
-              <ScrollableTabsButtonAuto />
+              <ScrollableTabsButton />
             </div>
           </Modal.Body>
           <Modal.Footer>

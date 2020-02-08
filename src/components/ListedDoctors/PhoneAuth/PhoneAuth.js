@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import withFirebaseAuth from "react-with-firebase-auth";
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import firebaseConfig from "../../firebaseConfig";
+import firebaseConfig from "../../../firebaseConfig";
 import "./PhoneAuth.css";
 import { Button } from "react-bootstrap";
 
@@ -44,7 +44,7 @@ class PhoneAuth extends Component {
   };
 
   handleChange = event => {
-    this.setState({ phone: event.target.value });
+    this.setState({ phone: `+91` + event.target.value });
   };
 
   render() {
@@ -57,15 +57,14 @@ class PhoneAuth extends Component {
             <input
               type="text"
               id="number"
-              placeholder="+9198******01"
-              value={this.state.phone}
+              placeholder="10-digit contact number"
               onChange={this.handleChange}
               className="number-input-phone-auth"
             />
             <div id="recaptcha-container"></div>
-            <button type="button" onClick={() => this.phoneAuth()}>
+            <Button variant="success" onClick={() => this.phoneAuth()}>
               SendCode
-            </button>
+            </Button>
           </form>
         </div>
       </div>
