@@ -33,8 +33,8 @@ export default class appointmentTime extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col md={1}></Col>
-          <Col md={10}>
+          {/* <Col md={1}></Col> */}
+          <Col md={12}>
             <Row>
               <Col md={12} sm={4} xs={4}>
                 <Row>
@@ -58,12 +58,12 @@ export default class appointmentTime extends Component {
               </Col>
             </Row>
           </Col>
-          <Col md={1}></Col>
+          {/* <Col md={1}></Col> */}
         </Row>
         <br />
         <Row>
-          <Col md={1}></Col>
-          <Col md={10}>
+          {/* <Col md={1}></Col> */}
+          <Col md={12}>
             <Row>
               <Col md={12} sm={4} xs={4}>
                 <Row>
@@ -87,12 +87,12 @@ export default class appointmentTime extends Component {
               </Col>
             </Row>
           </Col>
-          <Col md={1}></Col>
+          {/* <Col md={1}></Col> */}
         </Row>
         <br />
         <Row>
-          <Col md={1}></Col>
-          <Col md={10}>
+          {/* <Col md={1}></Col> */}
+          <Col md={12}>
             <Row>
               <Col md={12} sm={4} xs={4}>
                 <Row>
@@ -116,7 +116,7 @@ export default class appointmentTime extends Component {
               </Col>
             </Row>
           </Col>
-          <Col md={1}></Col>
+          {/* <Col md={1}></Col> */}
         </Row>
       </Container>
     );
