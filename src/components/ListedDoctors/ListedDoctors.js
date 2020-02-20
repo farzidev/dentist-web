@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  Row,
-  Col,
-  Image,
-  Button,
-  ButtonToolbar,
-  Container,
-  Dropdown
-} from "react-bootstrap";
+import { Row, Col, Image, Container, Dropdown } from "react-bootstrap";
 import "./ListedDoctors.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,7 +7,8 @@ import {
   faGraduationCap,
   faStar
 } from "@fortawesome/free-solid-svg-icons";
-import BookNowPopUp from "./BookNowPopUp/BookNowPopUp";
+// import BookNowPopUp from "./BookNowPopUp/BookNowPopUp";
+import CollapsableBooking from "./CollapsableBooking/CollapsableBooking";
 
 export default class ListedDoctors extends Component {
   constructor() {
@@ -99,10 +92,10 @@ export default class ListedDoctors extends Component {
               <div className="book-now-votes-division">
                 <span className="thumbsup-votes">
                   <FontAwesomeIcon icon={faThumbsUp} color="green" />
-                  &nbsp;96% votes
+                  &nbsp;96%&nbsp;votes
                 </span>
                 {/*rendering the book-now-pop-up for the selected doctor.*/}
-                <ButtonToolbar>
+                {/* <ButtonToolbar>
                   <Button
                     className="book-now-button"
                     size="sm"
@@ -114,8 +107,11 @@ export default class ListedDoctors extends Component {
                     show={this.state.showModal}
                     onHide={this.closeModal}
                   />
-                </ButtonToolbar>
+                </ButtonToolbar> */}
               </div>
+            </Col>
+            <Col xl={12} lg={12} md={12} sm={12} xs={12}>
+              <CollapsableBooking />
             </Col>
           </Row>
         </Col>
