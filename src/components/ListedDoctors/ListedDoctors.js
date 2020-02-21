@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
   faGraduationCap,
-  faStar
+  faStar,
+  faLanguage
 } from "@fortawesome/free-solid-svg-icons";
 // import BookNowPopUp from "./BookNowPopUp/BookNowPopUp";
 import CollapsableBooking from "./CollapsableBooking/CollapsableBooking";
@@ -18,6 +19,7 @@ export default class ListedDoctors extends Component {
       lastName: "Hathaway",
       designation: "Senior Consultant and Head of Department",
       degree: "BDS, Degree2, Degree3",
+      languages: "English, Cantonese, Mandarin",
       field: "Dentist, Dental Surgeon, Implantologist",
       items: [0, 1, 2],
       showModal: false
@@ -78,6 +80,11 @@ export default class ListedDoctors extends Component {
                     <FontAwesomeIcon icon={faStar} color="light-blue" />
                     &nbsp;{this.state.field}
                   </span>
+                  <br />
+                  <span>
+                    <FontAwesomeIcon icon={faLanguage} color="light-blue" />
+                    &nbsp; {this.state.languages}
+                  </span>
                 </div>
               </div>
             </Col>
@@ -110,7 +117,14 @@ export default class ListedDoctors extends Component {
                 </ButtonToolbar> */}
               </div>
             </Col>
-            <Col xl={12} lg={12} md={12} sm={12} xs={12}>
+            <Col
+              xl={12}
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              className="collapsable-booking-menu-container"
+            >
               <CollapsableBooking />
             </Col>
           </Row>

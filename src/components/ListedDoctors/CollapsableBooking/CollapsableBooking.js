@@ -6,16 +6,25 @@ import "./CollapsableBooking.css";
 export default function CollapsableBooking() {
   const [open, setOpen] = useState(false);
 
+  const removeButton = () => {
+    document.getElementById("book-now-card-btn-id").style.display = "none";
+  };
+
   return (
     <React.Fragment>
-      <Button
-        className="test-button"
-        size="sm"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-      >
-        Book&nbsp;Now
-      </Button>
+      <div className="book-now-card-btn-container" id="book-now-card-btn-id">
+        <Button
+          className="test-button"
+          size="md"
+          onClick={() => {
+            setOpen(!open);
+            removeButton();
+          }}
+          aria-expanded={open}
+        >
+          Book&nbsp;Now
+        </Button>
+      </div>
       <Collapse in={open}>
         <div>
           <ScrollableTabs />

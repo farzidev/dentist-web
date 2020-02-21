@@ -1,5 +1,11 @@
-.test-button {
+.book-now-card-btn-container {
   position: relative;
+}
+
+.test-button {
+  position: absolute;
+  right: 1rem;
+  bottom: 5px;
   background-color: #fe8369;
   border: none;
   outline: none;
