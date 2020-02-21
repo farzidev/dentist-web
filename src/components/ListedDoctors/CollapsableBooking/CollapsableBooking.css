@@ -1,5 +1,6 @@
 .book-now-card-btn-container {
   position: relative;
+  margin-bottom: 5px;
 }
 
 .test-button {
@@ -9,6 +10,16 @@
   background-color: #fe8369;
   border: none;
   outline: none;
+}
+
+.test-button-hide {
+  position: absolute;
+  right: 1rem;
+  bottom: 5px;
+  background-color: #fe8369;
+  border: none;
+  outline: none;
+  display: none;
 }
 
 .test-button:hover {
