@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Collapse } from "react-bootstrap";
-import ScrollableTabs from "../BookNowPopUp/ScrollableTabs/ScrollableTabs";
+import ScrollableTabs from "./ScrollableTabs/ScrollableTabs";
 import "./CollapsableBooking.css";
 
 export default function CollapsableBooking() {

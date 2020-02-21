@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import "./ScrollableTabs.css";
 import AppointmentTimings from "../../AppointmentTimes/appointmentTime";
+import { Button } from "react-bootstrap";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -79,6 +80,10 @@ export default function ScrollableTabsButtonAuto() {
       </AppBar>
       <TabPanel value={value} index={0}>
         <AppointmentTimings />
+        {/* <br />
+        <div className="cnfrm-apt-btn">
+          <Button size="md">Confirm Appointment</Button>
+        </div> */}
       </TabPanel>
       <TabPanel value={value} index={1}>
         <AppointmentTimings />

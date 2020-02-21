@@ -73,17 +73,17 @@ export default class ListedDoctors extends Component {
                       icon={faGraduationCap}
                       color="light-blue"
                     />
-                    &nbsp; {this.state.degree}
+                    &nbsp;&nbsp;{this.state.degree}
                   </span>
                   <br />
                   <span>
                     <FontAwesomeIcon icon={faStar} color="light-blue" />
-                    &nbsp;{this.state.field}
+                    &nbsp;&nbsp;{this.state.field}
                   </span>
                   <br />
                   <span>
                     <FontAwesomeIcon icon={faLanguage} color="light-blue" />
-                    &nbsp; {this.state.languages}
+                    &nbsp;&nbsp;{this.state.languages}
                   </span>
                 </div>
               </div>

@@ -1,0 +1,20 @@
+.confirm-appointment-col {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  position: realtive;
+}
+
+.confirm-appointment-btn-div {
+  position: absolute;
+  left: 36%;
+}
+
+.confirm-appointment-btn {
+  background-color: #fe8369;
+  border: none;
+}
+
+.confirm-appointment-btn:hover {
+  background-color: #fe8369;
+  border: 1px #fe8369 solid;
+}

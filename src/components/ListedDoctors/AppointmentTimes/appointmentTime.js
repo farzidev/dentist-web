@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Button, Container } from "react-bootstrap";
+import "./appointmentTime.css";
 
 export default class appointmentTime extends Component {
   constructor() {
@@ -32,91 +33,102 @@ export default class appointmentTime extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          {/* <Col md={1}></Col> */}
+        <Row noGutters>
           <Col md={12}>
             <Row>
-              <Col md={12} sm={4} xs={4}>
+              {/* <Col md={1}></Col> */}
+              <Col md={12}>
                 <Row>
-                  <Col md={2}>
-                    <span>Morning</span>
-                  </Col>
-                  {this.state.morningTime.map(item => {
-                    return (
+                  <Col md={12} sm={4} xs={4}>
+                    <Row>
                       <Col md={2}>
-                        <Button
-                          size="sm"
-                          disabled={item.isBooked}
-                          variant="outline-dark"
-                        >
-                          {item.timing}
-                        </Button>
+                        <span>Morning</span>
                       </Col>
-                    );
-                  })}
+                      {this.state.morningTime.map(item => {
+                        return (
+                          <Col md={2}>
+                            <Button
+                              size="sm"
+                              disabled={item.isBooked}
+                              variant="outline-dark"
+                            >
+                              {item.timing}
+                            </Button>
+                          </Col>
+                        );
+                      })}
+                    </Row>
+                  </Col>
                 </Row>
               </Col>
+              {/* <Col md={1}></Col> */}
             </Row>
-          </Col>
-          {/* <Col md={1}></Col> */}
-        </Row>
-        <br />
-        <Row>
-          {/* <Col md={1}></Col> */}
-          <Col md={12}>
+            <br />
             <Row>
-              <Col md={12} sm={4} xs={4}>
+              {/* <Col md={1}></Col> */}
+              <Col md={12}>
                 <Row>
-                  <Col md={2}>
-                    <span>Afternoon</span>
-                  </Col>
-                  {this.state.afternoonTime.map(item => {
-                    return (
+                  <Col md={12} sm={4} xs={4}>
+                    <Row>
                       <Col md={2}>
-                        <Button
-                          size="sm"
-                          disabled={item.isBooked}
-                          variant="outline-dark"
-                        >
-                          {item.timing}
-                        </Button>
+                        <span>Afternoon</span>
                       </Col>
-                    );
-                  })}
+                      {this.state.afternoonTime.map(item => {
+                        return (
+                          <Col md={2}>
+                            <Button
+                              size="sm"
+                              disabled={item.isBooked}
+                              variant="outline-dark"
+                            >
+                              {item.timing}
+                            </Button>
+                          </Col>
+                        );
+                      })}
+                    </Row>
+                  </Col>
                 </Row>
               </Col>
+              {/* <Col md={1}></Col> */}
             </Row>
-          </Col>
-          {/* <Col md={1}></Col> */}
-        </Row>
-        <br />
-        <Row>
-          {/* <Col md={1}></Col> */}
-          <Col md={12}>
+            <br />
             <Row>
-              <Col md={12} sm={4} xs={4}>
+              {/* <Col md={1}></Col> */}
+              <Col md={12}>
                 <Row>
-                  <Col md={2}>
-                    <span>Evening</span>
-                  </Col>
-                  {this.state.eveningTime.map(item => {
-                    return (
+                  <Col md={12} sm={4} xs={4}>
+                    <Row>
                       <Col md={2}>
-                        <Button
-                          size="sm"
-                          disabled={item.isBooked}
-                          variant="outline-dark"
-                        >
-                          {item.timing}
-                        </Button>
+                        <span>Evening</span>
                       </Col>
-                    );
-                  })}
+                      {this.state.eveningTime.map(item => {
+                        return (
+                          <Col md={2}>
+                            <Button
+                              size="sm"
+                              disabled={item.isBooked}
+                              variant="outline-dark"
+                            >
+                              {item.timing}
+                            </Button>
+                          </Col>
+                        );
+                      })}
+                    </Row>
+                  </Col>
                 </Row>
               </Col>
+              {/* <Col md={1}></Col> */}
             </Row>
           </Col>
-          {/* <Col md={1}></Col> */}
+          <Col md={12} className="confirm-appointment-col">
+            <div className="confirm-appointment-btn-div">
+              <Button size="md" className="confirm-appointment-btn">
+                Confirm&nbsp;Appointment
+              </Button>
+            </div>
+          </Col>
         </Row>
       </Container>
     );
