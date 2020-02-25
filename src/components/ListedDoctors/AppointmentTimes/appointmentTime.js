@@ -27,13 +27,19 @@ export default class appointmentTime extends Component {
         { timing: "07:30 PM", isBooked: false },
         { timing: "08:00 PM", isBooked: true }
       ]
+      // isClicked: false
     };
   }
+
+  // toggleOTPMenu = () => {
+  //   this.setState({ isClicked: !this.state.isClicked });
+  // };
 
   render() {
     return (
       <Container fluid>
         <Row noGutters>
+          {/* {!this.state.isClicked && ( */}
           <Col md={12}>
             <Row>
               {/* <Col md={1}></Col> */}
@@ -48,6 +54,7 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
                               variant="outline-dark"
@@ -77,6 +84,7 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
                               variant="outline-dark"
@@ -106,6 +114,7 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
                               variant="outline-dark"
@@ -122,13 +131,26 @@ export default class appointmentTime extends Component {
               {/* <Col md={1}></Col> */}
             </Row>
           </Col>
-          <Col md={12} className="confirm-appointment-col">
+          {/* )}
+          {this.state.isClicked && (
+            <Col md={12}>
+              <h1>otp component</h1>
+            </Col>
+          )} */}
+
+          {/* This was for the confirm-appointment button before when it was placed here. */}
+          {/* <Col md={12} className="confirm-appointment-col">
             <div className="confirm-appointment-btn-div">
-              <Button size="md" className="confirm-appointment-btn">
+              <Button
+                size="md"
+                onClick={this.toggleOTPMenu}
+                className="confirm-appointment-btn"
+              >
                 Confirm&nbsp;Appointment
               </Button>
+              {console.log(this.state.isClicked)}
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     );

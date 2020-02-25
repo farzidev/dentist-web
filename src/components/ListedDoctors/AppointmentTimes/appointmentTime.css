@@ -1,4 +1,4 @@
-.confirm-appointment-col {
+/* .confirm-appointment-col {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   position: realtive;
@@ -14,7 +14,17 @@
   border: none;
 }
 
+.timings-btn:focus {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+}
+
 .confirm-appointment-btn:hover {
   background-color: #fe8369;
   border: 1px #fe8369 solid;
+} */
+
+.timings-btn:focus {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
 }

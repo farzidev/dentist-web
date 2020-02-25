@@ -27,3 +27,19 @@
   border: none;
   outline: none;
 }
+
+/* Styles for confirm appointment */
+
+.confirm-appointment-col {
+  text-align: center;
+}
+
+.confirm-appointment-btn {
+  background-color: #fe8369;
+  border: none;
+}
+
+.confirm-appointment-btn:hover {
+  background-color: #fe8369;
+  border: 1px #fe8369 solid;
+}
