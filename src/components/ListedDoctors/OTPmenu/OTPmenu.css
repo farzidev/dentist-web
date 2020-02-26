@@ -1,0 +1,67 @@
+/* .otp-menu-base-row {
+  background-color: #fe8369;
+  color: white;
+}
+
+.otp-menu-title {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.customBtn {
+  border-radius: 0px;
+  padding: 10px;
+}
+
+form input {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+} */
+
+/* Working Styles
+.otp-input {
+  text-align: center !important;
+}
+
+.otp-input-base-row {
+  text-align: center !important;
+  margin: 0 auto;
+  color: white;
+}
+
+.otp-input-container {
+  background-color: #fe8369;
+  padding: 1rem !important;
+  border-radius: 10px;
+}
+ */
+
+.view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.card {
+  min-width: 360px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  border-radius: 4px;
+  background: white;
+}
+
+.card > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin-top--small {
+  margin-top: 1rem;
+}
