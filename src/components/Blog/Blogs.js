@@ -3,29 +3,46 @@ import { Row, Col } from "react-bootstrap";
 import "./Blogs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default class Blogs extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       firstName: "Anna",
       lastName: "Hathaway",
       blogTitle: "Want Brighter, Whiter Teeth ?",
-      datePosted: "27 Feb 2020",
+      datePosted: "Feb 27, 2020",
       votes: "96",
       blogs: [0, 1, 2]
     };
   }
+
+  changeRoute = id => {
+    // this.context.router.push("/blogs/:id");
+    console.log("hitting push");
+    // this.props.history.path.push(``);
+    return this.props.history.push(`${this.props.match.url}/${id}`);
+  };
+
+  componentDidMount() {
+    console.log(this.props.history);
+  }
+
   render() {
     let blogList = this.state.blogs.map((blog, index) => {
       return (
-        <Row noGutters className="blog-list-element-base-row">
+        <Row
+          noGutters
+          className="blog-list-element-base-row"
+          onClick={() => this.changeRoute(index)}
+        >
           <Col md={12}>
             <Row noGutters>
-              <Col md={5} className="blog-image">
+              <Col md={12} lg={5} className="blog-image">
                 <h3>Would insert image here.</h3>
               </Col>
-              <Col md={7} className="blog-content">
+              <Col md={12} lg={7} className="blog-content">
                 <div className="blog-content-top-row">
                   <h4>{this.state.blogTitle}</h4>
                   <div className="blog-content-top-row-right">
@@ -46,7 +63,7 @@ export default class Blogs extends Component {
                   </h6>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="blog-posted-on">
-                    {this.state.datePosted}
+                    <i>{this.state.datePosted}</i>
                   </span>
                 </div>
                 <div className="blog-content-bottom-row">
@@ -72,7 +89,9 @@ export default class Blogs extends Component {
           </Col>
         </Row>
       );
+      //   <Link to={`/blogs/${index}`}>{blog}</Link>;
     });
+
     return (
       <Row noGutters className="blogs-menu-base-row">
         <Col md={1}></Col>

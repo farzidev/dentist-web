@@ -45,9 +45,19 @@
 }
 
 .blog-content-author {
-  color: rgba(59, 105, 255, 0.685);
+  color: rgba(27, 179, 250, 0.938);
+  font-weight: 500 !important;
 }
 
 .blog-posted-on {
   font-size: 0.9rem;
+  color: #00000080;
+}
+
+/* Media Queries */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .blog-content-top-row {
+    display: block;
+  }
 }

@@ -35,7 +35,7 @@ export default class NavBar extends Component {
               Pages
             </Nav.Link>
             <Nav.Link className="hover-class-header">
-              <Link className="a-navbar-link" to="/blog">
+              <Link className="a-navbar-link" to="/blogs">
                 Blog
               </Link>
             </Nav.Link>

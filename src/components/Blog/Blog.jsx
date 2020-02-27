@@ -5,6 +5,9 @@ import Blogs from "./Blogs";
 import Footer from "../Footer/Footer";
 
 export default class Blog extends Component {
+  componentDidMount() {
+    console.log(this.props);
+  }
   render() {
     return (
       <React.Fragment>

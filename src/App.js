@@ -4,7 +4,8 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import FoundDoctors from "./components/FoundDoctors/FoundDoctors";
-import Blog from "./components/Blog/Blog.jsx";
+import Blogs from "./components/Blog/Blog.jsx";
+import Blog from "./components/Blog/Blog";
 // import PhoneAuth from "./components/ListedDoctors/PhoneAuth";
 
 export default class App extends Component {
@@ -15,8 +16,8 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/founddoctors" component={FoundDoctors} />
-            <Route path="/blog" component={Blog} />
-
+            <Route path="/blogs" component={Blogs} />
+            <Route path="/blogs/id" component={Blog} />
             {/* <Route path="/phoneauth" component={PhoneAuth} /> */}
           </Switch>
         </Router>

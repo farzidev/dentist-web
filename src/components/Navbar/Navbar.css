@@ -31,3 +31,8 @@ p {
 .a-navbar-link {
   color: rgba(0, 0, 0, 0.5) !important;
 }
+
+.a-navbar-link:hover {
+  color: #5dc7da !important;
+  text-decoration: none;
+}
