@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import { Navbar, Nav, Button, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
   render() {
@@ -33,8 +34,10 @@ export default class NavBar extends Component {
             <Nav.Link className="hover-class-header" href="#pages">
               Pages
             </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#blog">
-              Blog
+            <Nav.Link className="hover-class-header">
+              <Link className="a-navbar-link" to="/blog">
+                Blog
+              </Link>
             </Nav.Link>
             <Nav.Link className="hover-class-header" href="#contact">
               Contact&nbsp;&nbsp;&nbsp;&nbsp;
