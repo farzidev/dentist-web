@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import "./Blogs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default class Blogs extends Component {
   constructor(props) {
@@ -19,14 +19,14 @@ export default class Blogs extends Component {
   }
 
   changeRoute = id => {
-    // this.context.router.push("/blogs/:id");
     console.log("hitting push");
-    // this.props.history.path.push(``);
-    return this.props.history.push(`${this.props.match.url}/${id}`);
+    return this.props.routerProps.history.push(
+      `${this.props.routerProps.match.url}/${id}`
+    );
   };
 
   componentDidMount() {
-    console.log(this.props.history);
+    console.log(this.props);
   }
 
   render() {
