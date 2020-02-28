@@ -29,7 +29,7 @@ export default class Blog extends Component {
                 <h3>
                   <b>{this.state.blogTitle}</b>
                 </h3>
-                <div className="single-blog-header-right">
+                {/* <div className="single-blog-header-right">
                   <span className="thumbsup-votes">
                     <FontAwesomeIcon icon={faThumbsUp} color="green" />
                     &nbsp;{this.state.votes}%&nbsp;votes
@@ -38,7 +38,7 @@ export default class Blog extends Component {
                   <span className="thumbsup-votes">
                     <FontAwesomeIcon icon={faShareAlt} color="green" />
                   </span>
-                </div>
+                </div> */}
               </div>
               <div className="single-blog-header-line-2">
                 <p className="single-blog-content-author">
@@ -52,7 +52,7 @@ export default class Blog extends Component {
               </div>
               <div>
                 <div className="single-blog-page-image-div">
-                  <Image fluid src="/assets/images/sbpi.png" />
+                  {/* <Image fluid src="/assets/images/sbpi.png" /> */}
                 </div>
                 <div className="basic-content">
                   Retrieve the tooth, hold it by the crown (the part that is

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import "./Blogs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
@@ -39,8 +39,8 @@ export default class Blogs extends Component {
         >
           <Col md={12}>
             <Row noGutters>
-              <Col md={12} lg={5} className="blog-image">
-                <h3>Would insert image here.</h3>
+              <Col md={12} lg={5} className="blogs-image">
+                <div className="blogs-image-div"></div>
               </Col>
               <Col md={12} lg={7} className="blog-content">
                 <div className="blog-content-top-row">
