@@ -11,7 +11,7 @@ export default class FoundDoctors extends Component {
       <div className="found-doctors">
         <NavBar />
         <div className="blue-line">
-          <h5>Home > Doctors near Tomken Road</h5>
+          <h5>We have found the best doctors for you.</h5>
         </div>
 
         <Row>

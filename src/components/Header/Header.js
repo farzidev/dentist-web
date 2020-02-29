@@ -11,6 +11,7 @@ import {
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
   render() {
@@ -49,7 +50,9 @@ export default class Header extends Component {
                   </div>
                   <br />
                   <div>
-                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                    <Link to="/founddoctors">
+                      <Button className="header-book-now-btn">BOOK NOW</Button>
+                    </Link>
                   </div>
                 </div>
               </Col>

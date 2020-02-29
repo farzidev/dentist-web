@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import NavBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import "./Blog.css";
 
 export default class Blog extends Component {

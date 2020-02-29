@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "./Blogs.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 // import { Link } from "react-router-dom";
 
 export default class Blogs extends Component {
@@ -45,7 +45,7 @@ export default class Blogs extends Component {
               <Col md={12} lg={7} className="blog-content">
                 <div className="blog-content-top-row">
                   <h4>{this.state.blogTitle}</h4>
-                  <div className="blog-content-top-row-right">
+                  {/* <div className="blog-content-top-row-right">
                     <span className="thumbsup-votes">
                       <FontAwesomeIcon icon={faThumbsUp} color="green" />
                       &nbsp;{this.state.votes}%&nbsp;votes
@@ -54,7 +54,7 @@ export default class Blogs extends Component {
                     <span className="thumbsup-votes">
                       <FontAwesomeIcon icon={faShareAlt} color="green" />
                     </span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="blog-content-middle-row">
                   <h6 className="blog-content-author">

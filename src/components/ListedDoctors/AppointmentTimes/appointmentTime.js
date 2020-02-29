@@ -26,14 +26,21 @@ export default class appointmentTime extends Component {
         { timing: "07:00 PM", isBooked: true },
         { timing: "07:30 PM", isBooked: false },
         { timing: "08:00 PM", isBooked: true }
-      ]
+      ],
+      selectedTime: "12:10 PM"
       // isClicked: false
     };
+    this.selectedTimeHandler = this.selectedTimeHandler.bind(this);
   }
 
   // toggleOTPMenu = () => {
   //   this.setState({ isClicked: !this.state.isClicked });
   // };
+
+  selectedTimeHandler = selectedTime => {
+    console.log(this.state.selectedTime);
+    this.setState({ selectedTime: selectedTime });
+  };
 
   render() {
     return (
@@ -54,6 +61,8 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              value={item.timing}
+                              onClick={value => this.selectedTimeHandler()}
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
@@ -84,6 +93,8 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              value={item.timing}
+                              onClick={value => this.selectedTimeHandler}
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
@@ -114,6 +125,8 @@ export default class appointmentTime extends Component {
                         return (
                           <Col md={2}>
                             <Button
+                              value={item.timing}
+                              onClick={value => this.selectedTimeHandler}
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}

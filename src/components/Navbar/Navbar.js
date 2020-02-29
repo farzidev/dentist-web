@@ -12,8 +12,10 @@ export default class NavBar extends Component {
         expand="xl"
         variant="light"
       >
-        <Navbar.Brand href="#home">
-          <b>DentistWeb</b>
+        <Navbar.Brand>
+          <Link className="a-navbar-link" to="/">
+            <b>DentistWeb</b>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -45,7 +47,9 @@ export default class NavBar extends Component {
           </Nav>
           <Form inline>
             {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
-            <Button className="book-now-btn">Book Now</Button>
+            <Link to="/founddoctors">
+              <Button className="book-now-btn">Book Now</Button>
+            </Link>
           </Form>
         </Navbar.Collapse>
       </Navbar>

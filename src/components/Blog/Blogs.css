@@ -22,11 +22,11 @@
   display: flex !important;
 }
 
-.blog-content-top-row-right {
+/* .blog-content-top-row-right {
   position: absolute;
   right: 0;
   padding-right: 1rem;
-}
+} */
 
 .blog-content-middle-row {
   display: flex;
