@@ -92,7 +92,9 @@ export default class Header extends Component {
                   </div>
                   <br />
                   <div>
-                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                    <Link to="/founddoctors">
+                      <Button className="header-book-now-btn">BOOK NOW</Button>
+                    </Link>
                   </div>
                 </div>
               </Col>
@@ -132,7 +134,9 @@ export default class Header extends Component {
                   </div>
                   <br />
                   <div>
-                    <Button className="header-book-now-btn">BOOK NOW</Button>
+                    <Link to="/founddoctors">
+                      <Button className="header-book-now-btn">BOOK NOW</Button>
+                    </Link>
                   </div>
                 </div>
               </Col>

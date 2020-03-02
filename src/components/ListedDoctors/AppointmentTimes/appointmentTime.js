@@ -27,10 +27,10 @@ export default class appointmentTime extends Component {
         { timing: "07:30 PM", isBooked: false },
         { timing: "08:00 PM", isBooked: true }
       ],
-      selectedTime: "12:10 PM"
+      selectedTime: ""
       // isClicked: false
     };
-    this.selectedTimeHandler = this.selectedTimeHandler.bind(this);
+    // this.selectedTimeHandler = this.selectedTimeHandler.bind(this);
   }
 
   // toggleOTPMenu = () => {
@@ -38,9 +38,12 @@ export default class appointmentTime extends Component {
   // };
 
   selectedTimeHandler = selectedTime => {
-    console.log(this.state.selectedTime);
     this.setState({ selectedTime: selectedTime });
   };
+
+  componentDidUpdate() {
+    console.log(this.state.selectedTime);
+  }
 
   render() {
     return (
@@ -62,7 +65,9 @@ export default class appointmentTime extends Component {
                           <Col md={2}>
                             <Button
                               value={item.timing}
-                              onClick={value => this.selectedTimeHandler()}
+                              onClick={() =>
+                                this.selectedTimeHandler(item.timing)
+                              }
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
@@ -94,7 +99,9 @@ export default class appointmentTime extends Component {
                           <Col md={2}>
                             <Button
                               value={item.timing}
-                              onClick={value => this.selectedTimeHandler}
+                              onClick={() =>
+                                this.selectedTimeHandler(item.timing)
+                              }
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}
@@ -126,7 +133,9 @@ export default class appointmentTime extends Component {
                           <Col md={2}>
                             <Button
                               value={item.timing}
-                              onClick={value => this.selectedTimeHandler}
+                              onClick={() =>
+                                this.selectedTimeHandler(item.timing)
+                              }
                               className="timings-btn"
                               size="sm"
                               disabled={item.isBooked}

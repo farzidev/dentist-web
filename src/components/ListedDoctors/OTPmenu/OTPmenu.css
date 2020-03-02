@@ -1,43 +1,24 @@
-/* .otp-menu-base-row {
-  background-color: #fe8369;
-  color: white;
+.phone-number-container {
+  padding: 2rem;
 }
 
-.otp-menu-title {
-  font-weight: 600;
-  margin-top: 20px;
-  font-size: 24px;
+.otp-menu-container {
+  padding: 1rem;
 }
 
-.customBtn {
-  border-radius: 0px;
-  padding: 10px;
+.send-otp-btn {
+  margin-top: 1rem;
 }
 
-form input {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-} */
-
-/* Working Styles
-.otp-input {
-  text-align: center !important;
+.otp-containing-module {
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 0 0 0 1.5rem;
 }
 
-.otp-input-base-row {
-  text-align: center !important;
-  margin: 0 auto;
-  color: white;
+.enter-verification-code-line {
+  color: black;
+  opacity: 0.9;
 }
-
-.otp-input-container {
-  background-color: #fe8369;
-  padding: 1rem !important;
-  border-radius: 10px;
-}
- */
 
 .view {
   display: flex;
@@ -49,7 +30,7 @@ form input {
 }
 
 .card {
-  min-width: 360px;
+  min-width: 270px;
   padding: 2rem;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   border-radius: 10px;

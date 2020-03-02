@@ -56,15 +56,15 @@ export default class Footer extends Component {
                     </h6>
 
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Home</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Home</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;About Us</a>
+                    <a href="#some-link">-&nbsp;&nbsp;About Us</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Services</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Services</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Testimonials</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Testimonials</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Contact Us</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Contact Us</a>
                     <br />
                   </Col>
                   <Col md={2} sm={6} xs={6} className="footer-social">
@@ -73,15 +73,15 @@ export default class Footer extends Component {
                       <div className="links-header">&nbsp;</div>
                     </h6>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Our Process</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Our Process</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;What We Do</a>
+                    <a href="#some-link">-&nbsp;&nbsp;What We Do</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Location</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Location</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Lorem</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Lorem</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Ipsum</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Ipsum</a>
                     <br />
                   </Col>
                   <Col md={2} sm={6} xs={6} className="footer-social">
@@ -90,13 +90,13 @@ export default class Footer extends Component {
                       <div className="links-header">&nbsp;</div>
                     </h6>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Privacy Policy</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Privacy Policy</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Terms & Conditions</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Terms & Conditions</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Lorem</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Lorem</a>
                     <br />
-                    <a href="#">-&nbsp;&nbsp;Ipsum</a>
+                    <a href="#some-link">-&nbsp;&nbsp;Ipsum</a>
                     <br />
                   </Col>
                   <Col md={3} sm={6} xs={6}>
