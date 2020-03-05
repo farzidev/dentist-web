@@ -3,14 +3,24 @@ import { Row, Col, Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import OtpInput from "react-otp-input";
 import "./OTPmenu.css";
+// import PhoneAuth from "../PhoneAuth/PhoneAuth";
 
 export default class OTPMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      UserSelectedTime: this.props.selectedTime
+      UserSelectedTime: this.props.selectedTime,
+      otp: [],
+      numInputs: 6
     };
   }
+
+  handleOtpChange = otp => {
+    this.setState({ otp });
+  };
+
+  componentDidMount() {}
+
   render() {
     return (
       <Row noGutters className="otp-containing-module">
@@ -20,10 +30,14 @@ export default class OTPMenu extends Component {
               <i>Confirm Appointment</i>
             </h6>
             <Form.Group controlId="formGroupPhoneNumber">
+              <Form.Control type="text" placeholder="Enter patient's name" />
+            </Form.Group>
+            <Form.Group controlId="formGroupPhoneNumber">
               <Form.Control
                 type="number"
                 placeholder="Enter your phone number here"
               />
+
               <Button variant="success" className="send-otp-btn">
                 Send&nbsp;OTP
               </Button>
@@ -47,10 +61,8 @@ export default class OTPMenu extends Component {
                       borderRadius: 4,
                       border: "1px solid rgba(0,0,0,0.3)"
                     }}
-                    numInputs={6}
-                    errorStyle="error"
-                    onChange={otp => console.log(otp)}
-                    // separator={<span>-</span>}
+                    numInputs={this.state.numInputs}
+                    onChange={otp => this.handleOtpChange(otp)}
                     isInputNum={true}
                     shouldAutoFocus={false}
                   />
@@ -58,6 +70,7 @@ export default class OTPMenu extends Component {
               </form>
             </div>
           </div>
+          <Button variant="success">Confirm&nbsp;OTP</Button>
         </Col>
       </Row>
     );

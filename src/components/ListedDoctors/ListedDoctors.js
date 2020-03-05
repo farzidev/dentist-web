@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Row, Col, Image, Container, Dropdown } from "react-bootstrap";
+import { Row, Col, Image, Container, Dropdown, Spinner } from "react-bootstrap";
 import "./ListedDoctors.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faThumbsUp,
+  // faThumbsUp,
   faGraduationCap,
   faStar,
   faLanguage
@@ -15,92 +15,104 @@ export default class ListedDoctors extends Component {
   constructor() {
     super();
     this.state = {
-      firstName: "Anna",
-      lastName: "Hathaway",
-      designation: "Senior Consultant and Head of Department",
-      degree: "BDS, Degree2, Degree3",
-      languages: "English, Cantonese, Mandarin",
-      field: "Dentist, Dental Surgeon, Implantologist",
-      items: [0, 1, 2],
-      showModal: false
+      data: []
     };
   }
 
   closeModal = () => this.setState({ showModal: false });
 
+  async componentDidMount() {
+    const url = "http://18.221.196.111:6999/api/show-doctor-available-slots";
+    const response = await fetch(url);
+    const data = await response.json();
+    // console.log(data);
+    this.setState({ data: data.data });
+  }
+
+  // componentDidUpdate() {
+  //   console.log(this.state);
+  // }
+
   render() {
     //storing the list of doctors inside a single array.
-    let doctorsList = this.state.items.map((item, index) => {
-      return (
-        <Col xl={12} className="doctor-cards-container">
-          <Row className="doctors-card-base-row">
-            <Col
-              xl={3}
-              lg={3}
-              md={3}
-              sm={12}
-              xs={12}
-              className="doctors-image-column"
-            >
-              <div className="doctors-image-division">
-                <Image
-                  className="doctors-picture"
-                  src="/assets/images/doctorsImage.png"
-                  fluid
-                />
-              </div>
-            </Col>
-            <Col
-              xl={6}
-              lg={6}
-              md={6}
-              sm={12}
-              xs={12}
-              className="doctors-info-container"
-            >
-              <div className="doctors-info-division">
-                <h5 className="doctors-name-designation">
-                  {"Dr. " + this.state.firstName + " " + this.state.lastName}
-                </h5>
-                <div className="doctors-name-designation">
-                  <i>{this.state.designation}</i>
+    let doctorsList = this.state.data.map((indiData, index) => {
+      console.log(indiData);
+      if (!indiData) {
+        return <Spinner animation="border" variant="danger" />;
+      } else {
+        return (
+          <Col xl={12} className="doctor-cards-container">
+            <Row className="doctors-card-base-row">
+              <Col
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="doctors-image-column"
+              >
+                <div className="doctors-image-division">
+                  <Image
+                    className="doctors-picture"
+                    src="/assets/images/doctorsImage.png"
+                    fluid
+                  />
                 </div>
-                <br />
-                <br />
-                <div className="doctors-degree-field">
-                  <span>
-                    <FontAwesomeIcon
-                      icon={faGraduationCap}
-                      color="light-blue"
-                    />
-                    &nbsp;&nbsp;{this.state.degree}
-                  </span>
+              </Col>
+              <Col
+                xl={6}
+                lg={6}
+                md={6}
+                sm={12}
+                xs={12}
+                className="doctors-info-container"
+              >
+                <div className="doctors-info-division">
+                  <h5 className="doctors-name-designation">
+                    {"Dr. " +
+                      indiData.doctor_info.first_name +
+                      " " +
+                      indiData.doctor_info.last_name}
+                  </h5>
+                  <div className="doctors-name-designation">
+                    <i>{indiData.doctor_info.designation}</i>
+                  </div>
                   <br />
-                  <span>
-                    <FontAwesomeIcon icon={faStar} color="light-blue" />
-                    &nbsp;&nbsp;{this.state.field}
-                  </span>
                   <br />
-                  <span>
-                    <FontAwesomeIcon icon={faLanguage} color="light-blue" />
-                    &nbsp;&nbsp;{this.state.languages}
-                  </span>
+                  <div className="doctors-degree-field">
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faGraduationCap}
+                        color="light-blue"
+                      />
+                      &nbsp;&nbsp;{indiData.doctor_info.degree}
+                    </span>
+                    <br />
+                    <span>
+                      <FontAwesomeIcon icon={faStar} color="light-blue" />
+                      &nbsp;&nbsp;{indiData.doctor_info.field}
+                    </span>
+                    <br />
+                    <span>
+                      <FontAwesomeIcon icon={faLanguage} color="light-blue" />
+                      &nbsp;&nbsp;{indiData.doctor_info.languages}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col
-              xl={3}
-              lg={3}
-              md={3}
-              sm={12}
-              xs={12}
-              className="votes-book-now"
-            >
-              <div className="book-now-votes-division">
-                <span className="thumbsup-votes">
-                  <FontAwesomeIcon icon={faThumbsUp} color="green" />
-                  &nbsp;96%&nbsp;votes
-                </span>
+              </Col>
+              <Col
+                xl={3}
+                lg={3}
+                md={3}
+                sm={12}
+                xs={12}
+                className="votes-book-now"
+              >
+                {/* <div className="book-now-votes-division">
+                  <span className="thumbsup-votes">
+                    <FontAwesomeIcon icon={faThumbsUp} color="green" />
+                    &nbsp;{indiData.doctor_info.votes}
+                  </span> */}
                 {/*rendering the book-now-pop-up for the selected doctor.*/}
                 {/* <ButtonToolbar>
                   <Button
@@ -115,21 +127,22 @@ export default class ListedDoctors extends Component {
                     onHide={this.closeModal}
                   />
                 </ButtonToolbar> */}
-              </div>
-            </Col>
-            <Col
-              xl={12}
-              lg={12}
-              md={12}
-              sm={12}
-              xs={12}
-              className="collapsable-booking-menu-container"
-            >
-              <CollapsableBooking />
-            </Col>
-          </Row>
-        </Col>
-      );
+                {/* </div> */}
+              </Col>
+              <Col
+                xl={12}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                className="collapsable-booking-menu-container"
+              >
+                <CollapsableBooking />
+              </Col>
+            </Row>
+          </Col>
+        );
+      }
     });
     return (
       <Container fluid className="doctors-list-container">
