@@ -73,7 +73,8 @@
 .streamline-process {
   font-family: perpetua;
   color: #4b4b4b;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .streamline-content {

@@ -54,18 +54,27 @@ export default class Footer extends Component {
                       Quick Links
                       <div className="links-header">&nbsp;</div>
                     </h6>
-
                     <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Home</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;About Us</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Services</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Testimonials</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Contact Us</a>
-                    <br />
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Home</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;About Us</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Services</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Testimonials</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Contact Us</a>
+                      <br />
+                    </div>
                   </Col>
                   <Col md={2} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
@@ -73,16 +82,26 @@ export default class Footer extends Component {
                       <div className="links-header">&nbsp;</div>
                     </h6>
                     <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Our Process</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;What We Do</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Location</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Lorem</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Ipsum</a>
-                    <br />
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Our Process</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;What We Do</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Location</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Lorem</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Ipsum</a>
+                      <br />
+                    </div>
                   </Col>
                   <Col md={2} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
@@ -90,14 +109,22 @@ export default class Footer extends Component {
                       <div className="links-header">&nbsp;</div>
                     </h6>
                     <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Privacy Policy</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Terms & Conditions</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Lorem</a>
-                    <br />
-                    <a href="#some-link">-&nbsp;&nbsp;Ipsum</a>
-                    <br />
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Privacy Policy</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Terms & Conditions</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Lorem</a>
+                      <br />
+                    </div>
+                    <div className="footer-links-div">
+                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Ipsum</a>
+                      <br />
+                    </div>
                   </Col>
                   <Col md={3} sm={6} xs={6}>
                     <div className="subscribe-form-column">

@@ -25,20 +25,14 @@ export default class ListedDoctors extends Component {
     const url = "http://18.221.196.111:6999/api/show-doctor-available-slots";
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
     this.setState({ data: data.data });
   }
-
-  // componentDidUpdate() {
-  //   console.log(this.state);
-  // }
 
   render() {
     //storing the list of doctors inside a single array.
     let doctorsList = this.state.data.map((indiData, index) => {
-      console.log(indiData);
       if (!indiData) {
-        return <Spinner animation="border" variant="danger" />;
+        return <Spinner animation="border" role="status" />
       } else {
         return (
           <Col xl={12} className="doctor-cards-container">
@@ -95,7 +89,7 @@ export default class ListedDoctors extends Component {
                     <br />
                     <span>
                       <FontAwesomeIcon icon={faLanguage} color="light-blue" />
-                      &nbsp;&nbsp;{indiData.doctor_info.languages}
+                      &nbsp;&nbsp;{indiData.doctor_info.language}
                     </span>
                   </div>
                 </div>
@@ -137,7 +131,7 @@ export default class ListedDoctors extends Component {
                 xs={12}
                 className="collapsable-booking-menu-container"
               >
-                <CollapsableBooking />
+                <CollapsableBooking DoctorData={indiData} />
               </Col>
             </Row>
           </Col>
@@ -147,10 +141,10 @@ export default class ListedDoctors extends Component {
     return (
       <Container fluid className="doctors-list-container">
         <div className="sort-function">
-          <div className="best-doctors-line">
+          {/* <div className="best-doctors-line">
             We have found the best doctors for you in your area.
-          </div>
-          <Dropdown className="sort-functionality" drop="left">
+          </div> */}
+          <Dropdown className="sort-functionality" drop="down">
             <Dropdown.Toggle variant="light" id="dropdown-basic">
               Sort By
             </Dropdown.Toggle>

@@ -21,8 +21,10 @@ export default class NavBar extends Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             {/*margin-left-auto */}
-            <Nav.Link className="hover-class-header" href="#home">
-              Home
+            <Nav.Link className="hover-class-header">
+              <Link className="a-navbar-link" to="/">
+                Home
+              </Link>
             </Nav.Link>
             <Nav.Link className="hover-class-header" href="#aboutus">
               AboutUs
@@ -30,20 +32,20 @@ export default class NavBar extends Component {
             <Nav.Link className="hover-class-header" href="#services">
               Services
             </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#ourworks">
+            {/* <Nav.Link className="hover-class-header" href="#ourworks">
               Our Works
-            </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#pages">
+            </Nav.Link> */}
+            {/* <Nav.Link className="hover-class-header" href="#pages">
               Pages
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link className="hover-class-header">
               <Link className="a-navbar-link" to="/blogs">
-                Blog
+                Blog&nbsp;&nbsp;&nbsp;&nbsp;
               </Link>
             </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#contact">
+            {/* <Nav.Link className="hover-class-header" href="#contact">
               Contact&nbsp;&nbsp;&nbsp;&nbsp;
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
           <Form inline>
             {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}

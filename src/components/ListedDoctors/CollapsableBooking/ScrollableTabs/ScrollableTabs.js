@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -49,9 +49,13 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ScrollableTabsButtonAuto() {
+export default function ScrollableTabsButtonAuto(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+
+  useEffect(() => {
+    //console.log(props.DoctorDataNested);
+  }, [props]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -67,7 +71,7 @@ export default function ScrollableTabsButtonAuto() {
           textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
-          //   aria-label="scrollable auto tabs example"
+        //   aria-label="scrollable auto tabs example"
         >
           <Tab label="Today" {...a11yProps(0)} />
           <Tab label="Tomorrow" {...a11yProps(1)} />
@@ -79,29 +83,29 @@ export default function ScrollableTabsButtonAuto() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
         {/* <br />
         <div className="cnfrm-apt-btn">
           <Button size="md">Confirm Appointment</Button>
         </div> */}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
       <TabPanel value={value} index={6}>
-        <AppointmentTimings />
+        <AppointmentTimings {...props} />
       </TabPanel>
     </div>
   );

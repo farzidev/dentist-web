@@ -5,8 +5,8 @@ import "./CollapsableBooking.css";
 import OTPMenu from "../OTPmenu/OTPmenu";
 
 export default class CollapsableBooking extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       open: false,
       showOtpMenu: false
@@ -40,7 +40,7 @@ export default class CollapsableBooking extends Component {
               {!this.state.showOtpMenu && (
                 <Row>
                   <Col md={12}>
-                    <ScrollableTabs />
+                    <ScrollableTabs DoctorDataNested={this.props.DoctorData} />
                   </Col>
                   <Col md={12} className="confirm-appointment-col">
                     <div className="confirm-appointment-btn-div">
@@ -51,7 +51,6 @@ export default class CollapsableBooking extends Component {
                       >
                         Confirm&nbsp;Appointment
                       </Button>
-                      {console.log(this.state.showOtpMenu)}
                     </div>
                   </Col>
                 </Row>
@@ -69,9 +68,4 @@ export default class CollapsableBooking extends Component {
       </React.Fragment>
     );
   }
-  // const [open, setOpen] = useState(false);
-
-  // const removeButton = () => {
-  //   document.getElementById("book-now-card-btn-id").style.display = "none";
-  // };
 }

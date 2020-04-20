@@ -75,8 +75,22 @@ a:visited:hover {
   color: white;
 }
 
+.footer-links-div {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links:link {
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.footer-links:link,
+.footer-links:hover {
+  color: #f0e3d0;
+}
+
 .footer-title {
-  font-family: Perpetua;
+  font-family: perpetua;
   font-weight: 600;
 }
 

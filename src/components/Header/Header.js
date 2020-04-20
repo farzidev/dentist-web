@@ -6,7 +6,6 @@ import {
   Carousel,
   CarouselItem,
   Button,
-  FormControl
 } from "react-bootstrap";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,11 +23,11 @@ export default class Header extends Component {
             </Button>
           </Col>
           <Col xl={4} lg={4} md={4} sm={4} xs={12}>
-            <FormControl
+            {/* <FormControl
               type="text"
               placeholder="Search for Doctors, Clinics, Hospitals etc..."
               className="mr-sm-2 search-bar"
-            />
+            /> */}
           </Col>
         </Row>
 
@@ -164,14 +163,3 @@ export default class Header extends Component {
     );
   }
 }
-
-/* <Col
-            xl={{ span: 3, offset: 1 }}
-            lg={{ span: 3, offset: 1 }}
-            md={{ span: 3, offset: 1 }}
-            sm={12}
-            xs={12}
-            className="header-right-col"
-          >
-            <BookAppointment />
-          </Col> */
