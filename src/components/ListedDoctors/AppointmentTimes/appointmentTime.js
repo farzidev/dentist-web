@@ -6,6 +6,7 @@ export default class appointmentTime extends Component {
   constructor() {
     super();
     this.state = {
+      data: [],
       morningTime: [
         { timing: "08:30 AM", isBooked: false },
         { timing: "09:00 AM", isBooked: true },
@@ -36,6 +37,14 @@ export default class appointmentTime extends Component {
   // toggleOTPMenu = () => {
   //   this.setState({ isClicked: !this.state.isClicked });
   // };
+
+  async componentDidMount() {
+    const url = "http://18.221.196.111:6999/api/show-doctor-available-slots";
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    this.setState({ data: data.data });
+  }
 
   selectedTimeHandler = selectedTime => {
     this.setState({ selectedTime: selectedTime });

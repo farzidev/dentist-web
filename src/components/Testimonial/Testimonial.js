@@ -4,6 +4,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { Image } from "react-bootstrap";
 import "./Testimonial.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 
 // const options = {
 //   items: 2,
@@ -46,7 +48,7 @@ export default class Test extends Component {
             margin={20}
             autoPlay
             responsive={this.state.responsive}
-            // options={options}
+          // options={options}
           >
             <div class="item">
               <div className="testimonial-card testimonial-card-1">
@@ -61,18 +63,23 @@ export default class Test extends Component {
                 <br />
                 <br />
                 <span className="testimonial-card-content">
-                  We thrive to create the best experience for everyone who comes
+                  <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
-                  comes to us.
+                  comes to us.We thrive to create the best experience for everyone who
+                  comes to us.</div>
                   <br />
-                  <hr />
-                  Aman Rawat
+                  <span className="testimonial-author">Aman Rawat</span>
+                  <br />
+                  <span className="company-name">Farzi Engineer</span>
                   <br />
                   <br />
-                  FarziEngineer
-                  <br />
-                  <br />
-                  Stars
+                  <span style={{ color: "#ff7474" }}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStarHalf} />
+                  </span>
                 </span>
               </div>
             </div>
@@ -89,18 +96,23 @@ export default class Test extends Component {
                 <br />
                 <br />
                 <span className="testimonial-card-content">
-                  We thrive to create the best experience for everyone who comes
+                  <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
-                  comes to us.
+                  comes to us.We thrive to create the best experience for everyone who
+                  comes to us.</div>
                   <br />
-                  <hr />
-                  Aman Rawat
+                  <span style={{ marginBottom: "12px !important" }} className="testimonial-author">Aman Rawat</span>
+                  <br />
+                  <span className="company-name">Farzi Engineer</span>
                   <br />
                   <br />
-                  FarziEngineer
-                  <br />
-                  <br />
-                  Stars
+                  <span style={{ color: "#ff7474" }}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStarHalf} />
+                  </span>
                 </span>
               </div>
             </div>
@@ -117,18 +129,23 @@ export default class Test extends Component {
                 <br />
                 <br />
                 <span className="testimonial-card-content">
-                  We thrive to create the best experience for everyone who comes
+                  <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
-                  comes to us.
+                  comes to us.We thrive to create the best experience for everyone who
+                  comes to us.</div>
                   <br />
-                  <hr />
-                  Aman Rawat
+                  <span className="testimonial-author">Aman Rawat</span>
+                  <br />
+                  <span className="company-name">Farzi Engineer</span>
                   <br />
                   <br />
-                  FarziEngineer
-                  <br />
-                  <br />
-                  Stars
+                  <span style={{ color: "#ff7474" }}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStarHalf} />
+                  </span>
                 </span>
               </div>
             </div>
@@ -145,18 +162,23 @@ export default class Test extends Component {
                 <br />
                 <br />
                 <span className="testimonial-card-content">
-                  We thrive to create the best experience for everyone who comes
+                  <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
-                  comes to us.
+                  comes to us.We thrive to create the best experience for everyone who
+                  comes to us.</div>
                   <br />
-                  <hr />
-                  Aman Rawat
+                  <span className="testimonial-author">Aman Rawat</span>
+                  <br />
+                  <span className="company-name">Farzi Engineer</span>
                   <br />
                   <br />
-                  FarziEngineer
-                  <br />
-                  <br />
-                  Stars
+                  <span style={{ color: "#ff7474" }}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStarHalf} />
+                  </span>
                 </span>
               </div>
             </div>
@@ -173,18 +195,23 @@ export default class Test extends Component {
                 <br />
                 <br />
                 <span className="testimonial-card-content">
-                  We thrive to create the best experience for everyone who comes
+                  <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
-                  comes to us.
+                  comes to us.We thrive to create the best experience for everyone who
+                  comes to us.</div>
                   <br />
-                  <hr />
-                  Aman Rawat
+                  <span className="testimonial-author">Aman Rawat</span>
+                  <br />
+                  <span className="company-name">Farzi Engineer</span>
                   <br />
                   <br />
-                  FarziEngineer
-                  <br />
-                  <br />
-                  Stars
+                  <span style={{ color: "#ff7474" }}>
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStarHalf} />
+                  </span>
                 </span>
               </div>
             </div>
@@ -196,11 +223,11 @@ export default class Test extends Component {
         <div className="testimonials-text-container">
           <div className="testimonial-text-container">
             <div className="testimonial-text-inner-container">
-              <h6>Client About Us</h6>
+              <h6 className="client-about-us-title">Client About Us</h6>
               <h2>Testimonial</h2>
               <br />
               <div className="testimonials-list-items">
-                <span className="testimonials-single-item">
+                <div className="testimonials-single-item">
                   <Image
                     className="check-mark-image"
                     src="/assets/images/checkMark.svg"
@@ -211,9 +238,9 @@ export default class Test extends Component {
                   />
                   &nbsp;&nbsp;&nbsp;We thrive to create the best experience for
                   everyone who comes to us.
-                </span>
+                </div>
                 <br />
-                <span className="testimonials-single-item">
+                <div className="testimonials-single-item">
                   <Image
                     className="check-mark-image"
                     src="/assets/images/checkMark.svg"
@@ -224,9 +251,9 @@ export default class Test extends Component {
                   />
                   &nbsp;&nbsp;&nbsp;We thrive to create the best experience for
                   everyone who comes to us.
-                </span>
+                </div>
                 <br />
-                <span className="testimonials-single-item">
+                <div className="testimonials-single-item">
                   <Image
                     className="check-mark-image"
                     src="/assets/images/checkMark.svg"
@@ -237,9 +264,9 @@ export default class Test extends Component {
                   />
                   &nbsp;&nbsp;&nbsp;We thrive to create the best experience for
                   everyone who comes to us.
-                </span>
+                </div>
                 <br />
-                <span className="testimonials-single-item">
+                <div className="testimonials-single-item">
                   <Image
                     className="check-mark-image"
                     src="/assets/images/checkMark.svg"
@@ -250,20 +277,7 @@ export default class Test extends Component {
                   />
                   &nbsp;&nbsp;&nbsp;We thrive to create the best experience for
                   everyone who comes to us.
-                </span>
-                <br />
-                <span className="testimonials-single-item">
-                  <Image
-                    className="check-mark-image"
-                    src="/assets/images/checkMark.svg"
-                    alt="check-mark"
-                    height="20px"
-                    width="20px"
-                    fluid
-                  />
-                  &nbsp;&nbsp;&nbsp;We thrive to create the best experience for
-                  everyone who comes to us.
-                </span>
+                </div>
                 <br />
               </div>
             </div>

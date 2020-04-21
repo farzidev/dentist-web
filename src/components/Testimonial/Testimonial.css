@@ -14,17 +14,19 @@
 }
 
 .item {
-  margin-top: 2rem;
+  margin: 2rem 0.5rem 1rem 0.5rem;
 }
 
 .testimonial-card {
   font-size: 0.7rem;
   max-width: 17rem;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 3rem 2rem;
   text-align: center;
   background-color: white;
-  border: 1px solid rgba(56, 56, 56, 0.63);
+  border: 0.5px solid rgba(56, 56, 56, 0.1);
+  box-shadow: -2px -2px 10px rgba(196, 195, 195, 0.253),
+    4px 4px 10px rgba(196, 196, 196, 0.253);
 }
 
 .testimonial-text-inner-container {
@@ -52,6 +54,17 @@
 }
 
 .testimonials-single-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.client-about-us-title {
+  color: #615f5f !important;
+}
+
+.testimonial-author {
+  margin-bottom: 12px !important;
+  font-weight: 600 !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 
