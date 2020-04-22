@@ -58,7 +58,9 @@
 }
 
 .features-benefits-right-col-2 {
-  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .view-all-button {
@@ -110,14 +112,18 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .features-benefits-left-col-division {
     padding: 0 1rem;
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .features-benefits-left-col-division {
     padding: 0 1rem;
+  }
+
+  .features-benefits-card-3 {
+    margin-top: 1.5rem;
   }
 }

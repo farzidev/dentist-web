@@ -35,7 +35,7 @@ export default class FeaturedServices extends Component {
                         lg={2}
                         md={4}
                         sm={6}
-                        xs={12}
+                        xs={6}
                         className="services-circle-column"
                       >
                         <div className="services-circles">
@@ -62,7 +62,7 @@ export default class FeaturedServices extends Component {
                         lg={2}
                         md={4}
                         sm={6}
-                        xs={12}
+                        xs={6}
                         className="services-circle-column"
                       >
                         <div className="services-circles">

@@ -126,6 +126,20 @@ a:visited:hover {
   }
 
   .subscribe-form-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
+  }
+
+  .subscribe-header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .border-remove-subs {
+    display: none;
+    visibility: hidden;
+    border-bottom: none !important;
   }
 }

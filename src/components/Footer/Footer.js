@@ -76,7 +76,7 @@ export default class Footer extends Component {
                       <br />
                     </div>
                   </Col>
-                  <Col md={2} sm={6} xs={6} className="footer-social">
+                  {/* <Col md={2} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
                       Sitemap
                       <div className="links-header">&nbsp;</div>
@@ -102,7 +102,7 @@ export default class Footer extends Component {
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Ipsum</a>
                       <br />
                     </div>
-                  </Col>
+                  </Col> */}
                   <Col md={2} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
                       Discover
@@ -126,11 +126,11 @@ export default class Footer extends Component {
                       <br />
                     </div>
                   </Col>
-                  <Col md={3} sm={6} xs={6}>
+                  <Col md={3} sm={12} xs={12}>
                     <div className="subscribe-form-column">
                       <h6 className="subscribe-header">
                         Subscribe
-                        <div className="links-header">&nbsp;</div>
+                        <div className="links-header border-remove-subs">&nbsp;</div>
                       </h6>
                       <br />
                       <br />
@@ -142,7 +142,7 @@ export default class Footer extends Component {
                               lg={8}
                               md={8}
                               sm={8}
-                              xs={12}
+                              xs={8}
                               className="subscribe-input-box"
                             >
                               <Form.Control
@@ -157,7 +157,7 @@ export default class Footer extends Component {
                               lg={4}
                               md={4}
                               sm={4}
-                              xs={12}
+                              xs={4}
                               className="subscribe-input-box"
                             >
                               <Button size="sm" className="subscribe-btn">

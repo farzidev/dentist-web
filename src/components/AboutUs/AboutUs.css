@@ -55,4 +55,13 @@
   .about-us-left-col-division {
     padding: 1rem;
   }
+  .about-us-container-base-row {
+    box-shadow: none;
+    border: none;
+  }
+
+  .about-us-title {
+    border-bottom: 1px solid red;
+    width: 63%;
+  }
 }

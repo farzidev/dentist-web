@@ -18,6 +18,10 @@
   justify-content: center;
 }
 
+.number-and-search {
+  padding-top: 2rem;
+}
+
 .header-text-content {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,5 +55,15 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .header-left-col {
     padding: 0 0.5rem !important;
+  }
+
+  .header-base-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-contain {
+    text-align: center;
   }
 }
