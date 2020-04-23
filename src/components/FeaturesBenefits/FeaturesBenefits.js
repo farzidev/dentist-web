@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./FeaturesBenefits.css";
 import { Row, Col, Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default class FeaturesBenefits extends Component {
   render() {
@@ -30,10 +31,11 @@ export default class FeaturesBenefits extends Component {
               </span>
               <br />
               <br />
-              <Button className="view-all-button">
-                View All &nbsp;
-                <FontAwesomeIcon icon={faArrowRight} />
+              <Link to="/founddoctors">
+                <Button className="view-all-button">
+                  Book&nbsp;Now&nbsp;
               </Button>
+              </Link>
               <br />
               <br />
             </div>

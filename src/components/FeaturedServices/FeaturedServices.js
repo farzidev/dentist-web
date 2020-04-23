@@ -11,7 +11,7 @@ export default class FeaturedServices extends Component {
   }
   render() {
     return (
-      <div className="featured-services-container">
+      <div className="featured-services-container" id={this.props.id}>
         <div className="featured-services-division">
           <div className="featured-services-title">
             <h3>FEATURED SERVICES</h3>

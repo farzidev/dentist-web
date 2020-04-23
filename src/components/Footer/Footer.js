@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Footer.css";
 import { Col, Row, Form, Button, Image } from "react-bootstrap";
 
@@ -49,32 +50,64 @@ export default class Footer extends Component {
                       </div>
                     </div>
                   </Col>
-                  <Col md={2} sm={6} xs={6} className="footer-social">
+                  <Col md={3} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
                       Quick Links
                       <div className="links-header">&nbsp;</div>
                     </h6>
                     <br />
                     <div className="footer-links-div">
-                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Home</a>
-                      <br />
+                      <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}
+                      >
+                        -&nbsp;&nbsp;Home
+                      </Link>
                     </div>
                     <div className="footer-links-div">
-                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;About Us</a>
-                      <br />
+                      <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        -&nbsp;&nbsp;About&nbsp;Us
+                      </Link>
                     </div>
                     <div className="footer-links-div">
-                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Services</a>
-                      <br />
+                      <Link
+                        activeClass="active"
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}
+                      >
+                        -&nbsp;&nbsp;Services
+                      </Link>
                     </div>
                     <div className="footer-links-div">
-                      <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Testimonials</a>
-                      <br />
+                      <Link
+                        activeClass="active"
+                        to="testimonials"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={900}
+                      >
+                        -&nbsp;&nbsp;Testimonials
+                      </Link>
                     </div>
-                    <div className="footer-links-div">
+                    {/* <div className="footer-links-div">
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Contact Us</a>
                       <br />
-                    </div>
+                    </div> */}
                   </Col>
                   {/* <Col md={2} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
@@ -103,7 +136,7 @@ export default class Footer extends Component {
                       <br />
                     </div>
                   </Col> */}
-                  <Col md={2} sm={6} xs={6} className="footer-social">
+                  <Col md={3} sm={6} xs={6} className="footer-social">
                     <h6 className="footer-header">
                       Discover
                       <div className="links-header">&nbsp;</div>
@@ -117,14 +150,14 @@ export default class Footer extends Component {
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Terms & Conditions</a>
                       <br />
                     </div>
-                    <div className="footer-links-div">
+                    {/* <div className="footer-links-div">
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Lorem</a>
                       <br />
                     </div>
                     <div className="footer-links-div">
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Ipsum</a>
                       <br />
-                    </div>
+                    </div> */}
                   </Col>
                   <Col md={3} sm={12} xs={12}>
                     <div className="subscribe-form-column">

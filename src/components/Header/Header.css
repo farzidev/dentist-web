@@ -59,8 +59,19 @@
 
   .header-base-row {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+  }
+
+  .header-right-col-image {
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+    padding-bottom: 1rem;
+  }
+
+  .header-left-col {
+    max-height: 8rem !important;
   }
 
   .header-contain {

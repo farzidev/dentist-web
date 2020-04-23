@@ -77,6 +77,7 @@ a:visited:hover {
 
 .footer-links-div {
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
 .footer-links:link {
@@ -141,5 +142,13 @@ a:visited:hover {
     display: none;
     visibility: hidden;
     border-bottom: none !important;
+  }
+
+  .subscribe-form-control {
+    margin: 0;
+  }
+
+  .subscribe-btn {
+    margin: 0;
   }
 }

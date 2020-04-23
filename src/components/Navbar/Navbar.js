@@ -26,12 +26,12 @@ export default class NavBar extends Component {
                 Home
               </Link>
             </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#aboutus">
+            {/* <Nav.Link className="hover-class-header" href="#aboutus">
               AboutUs
             </Nav.Link>
             <Nav.Link className="hover-class-header" href="#services">
               Services
-            </Nav.Link>
+            </Nav.Link> */}
             {/* <Nav.Link className="hover-class-header" href="#ourworks">
               Our Works
             </Nav.Link> */}

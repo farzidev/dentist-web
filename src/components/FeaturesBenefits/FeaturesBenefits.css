@@ -112,9 +112,33 @@
   }
 }
 
+@media (min-width: 991px) and (max-width: 1024px) {
+  .features-benefits-card-3 {
+    margin-top: 1.5rem;
+  }
+
+  .features-benefits-right-col-2 {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .features-benefits-card-3 {
+    margin-top: 1.5rem;
+  }
+
+  .features-benefits-right-col-2 {
+    display: block;
+  }
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .features-benefits-left-col-division {
     padding: 0 1rem;
+  }
+
+  .features-benefits-card-3 {
+    margin-top: 1.5rem;
   }
 }
 

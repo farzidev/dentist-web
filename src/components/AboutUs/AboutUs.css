@@ -45,6 +45,11 @@
   background-position: center;
 }
 
+.three-tooth-horizontal {
+  display: none;
+  visibility: hidden;
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .about-us-left-col-division {
     padding: 1rem;
@@ -63,5 +68,21 @@
   .about-us-title {
     border-bottom: 1px solid red;
     width: 63%;
+  }
+
+  .three-tooth {
+    display: none;
+    visibility: hidden;
+  }
+
+  .three-tooth-horizontal {
+    display: block !important;
+    visibility: visible !important;
+    background-image: url(/assets/images/three-tooth-horizontal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 8rem;
+    width: 100%;
   }
 }

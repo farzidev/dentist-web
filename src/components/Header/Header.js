@@ -15,20 +15,20 @@ import { Link } from "react-router-dom";
 export default class Header extends Component {
   render() {
     return (
-      <div>
+      <div id={this.props.id}>
         <Row className="number-and-search">
-          <Col xl={8} lg={8} md={8} sm={8} xs={12}>
+          <Col xl={12} lg={12} md={12} sm={12} xs={12}>
             <Button className="dentist-web-contact">
               <FontAwesomeIcon icon={faPhoneAlt} /> &nbsp; +123-4567890
             </Button>
           </Col>
-          <Col xl={4} lg={4} md={4} sm={4} xs={12}>
-            {/* <FormControl
+          {/* <Col xl={4} lg={4} md={4} sm={4} xs={12}>
+            <FormControl
               type="text"
               placeholder="Search for Doctors, Clinics, Hospitals etc..."
               className="mr-sm-2 search-bar"
-            /> */}
-          </Col>
+            />
+          </Col> */}
         </Row>
 
         <Carousel slide controls={false}>

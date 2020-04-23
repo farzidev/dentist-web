@@ -5,7 +5,7 @@ import { Col, Row, Image } from "react-bootstrap";
 export default class AboutUs extends Component {
   render() {
     return (
-      <div className="about-us-container">
+      <div className="about-us-container" id={this.props.id}>
         <div className="about-us-inner-container">
           <Row noGutters className="about-us-container-base-row">
             <Col
@@ -67,6 +67,7 @@ export default class AboutUs extends Component {
                 fluid
               /> */}
               <div className="three-tooth"></div>
+              <div className="three-tooth-horizontal"></div>
             </Col>
           </Row>
         </div>
