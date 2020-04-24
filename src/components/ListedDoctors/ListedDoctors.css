@@ -67,6 +67,10 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .doctors-degree-field {
+    font-size: 0.9rem;
+  }
+
   .doctors-info-division {
     padding: 1rem;
   }
@@ -101,5 +105,9 @@
   .book-now-button {
     right: 15px;
     margin: 0 !important;
+  }
+
+  .doctor-cards-container {
+    padding: 0;
   }
 }

@@ -1,30 +1,61 @@
-/* .confirm-appointment-col {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  position: realtive;
-}
-
-.confirm-appointment-btn-div {
-  position: absolute;
-  left: 36%;
-}
-
-.confirm-appointment-btn {
-  background-color: #fe8369;
-  border: none;
-}
-
 .timings-btn:focus {
   background-color: rgba(0, 0, 0, 0.473);
   color: white;
 }
 
-.confirm-appointment-btn:hover {
-  background-color: #fe8369;
-  border: 1px #fe8369 solid;
-} */
+@media (min-width: 767px) and (max-width: 990px) {
+  .custom-padding-appointmnet {
+    padding: 1rem 0.5rem !important;
+  }
 
-.timings-btn:focus {
-  background-color: rgba(0, 0, 0, 0.473);
-  color: white;
+  .morning-timings-row,
+  .afternoon-timings-row,
+  .evening-timings-row {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .timings-btn {
+    font-size: 0.9rem;
+  }
+
+  .MuiBox-root-98 {
+    padding: 2rem 0 !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .parent-column-appointment {
+    display: flex !important;
+  }
+
+  .morning-timings-row,
+  .afternoon-timings-row,
+  .evening-timings-row {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .timings-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .parent-column-appointment {
+    display: flex !important;
+  }
+
+  .morning-timings-row,
+  .afternoon-timings-row,
+  .evening-timings-row {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .timings-btn {
+    font-size: 0.7rem;
+  }
 }

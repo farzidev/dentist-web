@@ -65,9 +65,10 @@ export default class Header extends Component {
               >
                 <div className="side-image-container">
                   <Image
-                    src="/assets/images/headerTooth.png"
-                    height="160px"
-                    width="250px"
+                    className="first-banner-image"
+                    src="/assets/images/first-banner-img.png"
+                    height="250px"
+                    width="430px"
                     alt="headerTooth"
                   />
                 </div>
@@ -107,9 +108,10 @@ export default class Header extends Component {
               >
                 <div className="side-image-container">
                   <Image
-                    src="/assets/images/headerTooth.png"
-                    height="160px"
-                    width="250px"
+                    className="second-banner-image"
+                    src="/assets/images/second-banner-img.png"
+                    height="300px"
+                    width="240px"
                     alt="headerTooth"
                   />
                 </div>
@@ -149,9 +151,10 @@ export default class Header extends Component {
               >
                 <div className="side-image-container">
                   <Image
-                    src="/assets/images/headerTooth.png"
-                    height="160px"
-                    width="250px"
+                    className="third-banner-image"
+                    src="/assets/images/third-banner-img.png"
+                    height="280px"
+                    width="300px"
                     alt="headerTooth"
                   />
                 </div>

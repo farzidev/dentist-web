@@ -43,3 +43,17 @@
   background-color: #fe8369;
   border: 1px #fe8369 solid;
 }
+
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .test-button {
+    position: unset;
+  }
+
+  .book-now-card-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

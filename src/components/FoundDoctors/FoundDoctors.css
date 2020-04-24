@@ -43,6 +43,10 @@
   margin: 0 auto;
 }
 
+.blue-line {
+  margin-top: 5rem;
+}
+
 @media (min-width: 1025px) and (max-width: 1365px) {
   .consult-doctor-image {
     height: 70px;

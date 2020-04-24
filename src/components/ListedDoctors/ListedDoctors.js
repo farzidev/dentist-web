@@ -144,7 +144,7 @@ export default class ListedDoctors extends Component {
           {/* <div className="best-doctors-line">
             We have found the best doctors for you in your area.
           </div> */}
-          <Dropdown className="sort-functionality" drop="down">
+          <Dropdown className="sort-functionality" drop="left">
             <Dropdown.Toggle variant="light" id="dropdown-basic">
               Sort By
             </Dropdown.Toggle>

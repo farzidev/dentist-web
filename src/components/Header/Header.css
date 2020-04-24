@@ -77,4 +77,22 @@
   .header-contain {
     text-align: center;
   }
+
+  .first-banner-image {
+    height: 150px !important;
+    width: 250px !important;
+    margin-bottom: 1rem;
+  }
+
+  .second-banner-image {
+    height: 180px !important;
+    width: 140px !important;
+    margin-bottom: 1rem;
+  }
+
+  .third-banner-image {
+    height: 170px !important;
+    width: 170px !important;
+    margin-bottom: 1rem;
+  }
 }
