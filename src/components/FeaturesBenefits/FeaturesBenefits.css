@@ -28,14 +28,14 @@
 }
 
 .features-benefits-card-1 {
-  background-color: #fe8369;
+  background-color: white;
   font-size: 0.8rem;
   padding: 2.5rem;
   border-radius: 5px;
   text-align: left;
-  color: white;
   overflow: hidden;
   border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
   transition: transform 0.3s;
 }
 
@@ -55,6 +55,22 @@
 .features-benefits-card-2:hover,
 .features-benefits-card-3:hover {
   box-shadow: 0 1rem 1rem rgba(63, 62, 62, 0.63);
+  background-color: #fe8369;
+  color: white;
+}
+
+.features-benefits-card-1:hover svg,
+.features-benefits-card-2:hover svg,
+.features-benefits-card-3:hover svg {
+  fill: white;
+}
+
+.target-svg,
+.time-svg,
+.support-svg {
+  height: 3rem;
+  width: 3rem;
+  fill: #fe8369;
 }
 
 .features-benefits-right-col-2 {
@@ -145,6 +161,15 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .features-benefits-left-col-division {
     padding: 0 1rem;
+  }
+
+  .cards-header-container {
+    display: flex !important;
+    padding-bottom: 0.7rem;
+  }
+
+  .card-header {
+    margin-left: 1.3rem;
   }
 
   .features-benefits-card-3 {

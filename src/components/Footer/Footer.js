@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./Footer.css";
 import { Col, Row, Form, Button, Image } from "react-bootstrap";
 
