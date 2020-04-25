@@ -1,0 +1,60 @@
+.send-otp-menu-container {
+  padding: 1rem;
+}
+
+.confirm-otp-menu-container {
+  padding: 1rem;
+}
+
+.booking-details {
+  padding: 5px;
+  text-align: center;
+  background-color: aliceblue;
+  border-top: 1px solid rgba(0, 0, 0, 0.281);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.booking-details-inner-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-number-info-line {
+  font-size: 0.8rem;
+}
+
+.send-otp-bottom-row {
+  margin-top: 1rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.phone-number-input-field {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.5rem;
+}
+
+.send-otp-btn {
+  background-color: #fe8369;
+  outline: none;
+  border: none;
+}
+
+.send-otp-btn:hover {
+  background-color: #fe8369;
+  outline: none;
+  border: 1px solid #fe8369;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .send-otp-btn {
+    margin-top: 1rem;
+  }
+
+  .phone-number-input-column {
+    margin-top: 1rem;
+  }
+}

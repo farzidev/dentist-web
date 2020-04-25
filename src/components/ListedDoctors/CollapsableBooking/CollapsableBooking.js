@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import { Button, Collapse, Row, Col } from "react-bootstrap";
 import ScrollableTabs from "./ScrollableTabs/ScrollableTabs";
 import "./CollapsableBooking.css";
-import OTPMenu from "../OTPmenu/OTPmenu";
+// import OTPMenu from "../OTPmenu/OTPmenu";
+import SendOTPMenu from "../OTPmenu/SendOTPMenu";
 
 export default class CollapsableBooking extends Component {
   constructor(props) {
     super(props);
     this.state = {
       open: false,
-      showOtpMenu: false
+      showSendOtpMenu: false
     };
   }
 
@@ -18,7 +19,7 @@ export default class CollapsableBooking extends Component {
   };
 
   toggleOTPMenu = () => {
-    this.setState({ showOtpMenu: !this.state.showOtpMenu });
+    this.setState({ showSendOtpMenu: !this.state.showSendOtpMenu });
   };
 
   render() {
@@ -37,7 +38,7 @@ export default class CollapsableBooking extends Component {
         <Collapse in={this.state.open}>
           <Row noGutters>
             <Col md={12}>
-              {!this.state.showOtpMenu && (
+              {!this.state.showSendOtpMenu && (
                 <Row>
                   <Col md={12}>
                     <ScrollableTabs DoctorDataNested={this.props.DoctorData} />
@@ -55,10 +56,10 @@ export default class CollapsableBooking extends Component {
                   </Col>
                 </Row>
               )}
-              {this.state.showOtpMenu && (
+              {this.state.showSendOtpMenu && (
                 <Row>
                   <Col md={12}>
-                    <OTPMenu />
+                    <SendOTPMenu />
                   </Col>
                 </Row>
               )}
