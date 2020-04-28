@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import moment from "moment";
 import { Button, Collapse, Row, Col } from "react-bootstrap";
 import ScrollableTabs from "./ScrollableTabs/ScrollableTabs";
 import "./CollapsableBooking.css";
@@ -10,9 +11,74 @@ export default class CollapsableBooking extends Component {
     super(props);
     this.state = {
       open: false,
-      showSendOtpMenu: false
+      showSendOtpMenu: false,
+      selectedTime: "",
+      selectedDate: "",
     };
   }
+
+  selectedTimeHandler = (time) => {
+    // console.log(time);
+    this.setState({ selectedTime: time });
+  };
+
+  selectedDateHandler = (value = 0) => {
+    // console.log(value);
+    if (value === 0) {
+      this.setState({ selectedDate: moment().format("Do MMM YYYY") });
+    }
+    if (value !== 0) {
+      switch (value) {
+        case 1:
+          this.setState({
+            selectedDate: moment()
+              .add(1, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+          break;
+        case 2:
+          this.setState({
+            selectedDate: moment()
+              .add(2, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+          break;
+        case 3:
+          this.setState({
+            selectedDate: moment()
+              .add(3, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+          break;
+        case 4:
+          this.setState({
+            selectedDate: moment()
+              .add(4, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+          break;
+        case 5:
+          this.setState({
+            selectedDate: moment()
+              .add(5, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+          break;
+        case 6:
+          this.setState({
+            selectedDate: moment()
+              .add(6, "days")
+              .format("Do MMM YYYY")
+              .toString(),
+          });
+      }
+    }
+  };
 
   setOpen = () => {
     this.setState({ open: !this.state.open });
@@ -21,6 +87,10 @@ export default class CollapsableBooking extends Component {
   toggleOTPMenu = () => {
     this.setState({ showSendOtpMenu: !this.state.showSendOtpMenu });
   };
+
+  // componentDidUpdate() {
+  //   console.log(this.state.selectedDate);
+  // }
 
   render() {
     return (
@@ -41,7 +111,11 @@ export default class CollapsableBooking extends Component {
               {!this.state.showSendOtpMenu && (
                 <Row>
                   <Col md={12}>
-                    <ScrollableTabs DoctorDataNested={this.props.DoctorData} />
+                    <ScrollableTabs
+                      DoctorDataNested={this.props.DoctorData}
+                      timeHandler={this.selectedTimeHandler}
+                      dateHandler={this.selectedDateHandler}
+                    />
                   </Col>
                   <Col md={12} className="confirm-appointment-col">
                     <div className="confirm-appointment-btn-div">
@@ -59,7 +133,10 @@ export default class CollapsableBooking extends Component {
               {this.state.showSendOtpMenu && (
                 <Row>
                   <Col md={12}>
-                    <SendOTPMenu />
+                    <SendOTPMenu
+                      selectedTime={this.state.selectedTime}
+                      selectedDate={this.state.selectedDate}
+                    />
                   </Col>
                 </Row>
               )}

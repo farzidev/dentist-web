@@ -1,19 +1,26 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
-import { Form } from "react-bootstrap";
 import OtpInput from "react-otp-input";
 import "./OTPmenu.css";
 import { BookingDetails } from "./SendOTPMenu";
 // import PhoneAuth from "../PhoneAuth/PhoneAuth";
 
-export default function OTPmenu() {
+export default function OTPmenu(params) {
+
+  const [OTPValue, setOTPValue] = useState('');
+
+  const handleOtpChange = (otp) => {
+    setOTPValue({ otp });
+    console.log(OTPValue);
+  }
+
   return (
     <div>
-      <BookingDetails />
+      <BookingDetails time={params.selectedTime} date={params.selectedDate} />
       <Row className="otp-containing-module">
         <Col md={3} className="confirm-booking-inner-column">
           <div>
-            Enter Recieved OTP
+            Enter Received OTP
           </div>
         </Col>
         <Col md={6} className="otp-menu-container">
@@ -29,8 +36,9 @@ export default function OTPmenu() {
                   border: "none",
                   borderBottom: "1px solid black"
                 }}
+                onChange={handleOtpChange}
                 numInputs="4"
-                shouldAutoFocus={false}
+                shouldAutoFocus={true}
               />
             </div>
           </div>

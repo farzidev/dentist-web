@@ -1,19 +1,25 @@
 import React, { useState } from "react";
+import moment from "moment";
 import "./SendOTPMenu.css";
 import { Row, Col, Button } from "react-bootstrap";
-import OTPMenu from "./OTPmenu";
+import OTPclass from "./OTPclass";
 
-export default function SendOTPMenu(date, time) {
+export default function SendOTPMenu(params) {
   const [ButtonText] = useState("Send OTP");
   const [OpenMenu, setOpenMenu] = useState(false);
-  const [PhoneNumber, setPhoneNumber] = useState('');
 
-  console.log(PhoneNumber);
+  function PhoneNumberHandler(event) {
+    let PhoneNumber = 0;
+    if (event.target.value !== PhoneNumber) {
+      PhoneNumber = event.target.value;
+    }
+    console.log(PhoneNumber);
+  }
 
   if (!OpenMenu) {
     return (
       <div className="send-otp-menu-container">
-        <BookingDetails />
+        <BookingDetails time={params.selectedTime} date={params.selectedDate} />
         <Row>
           <Col md={12}>
             <Row className="send-otp-bottom-row">
@@ -24,26 +30,38 @@ export default function SendOTPMenu(date, time) {
               </Col>
               <Col md={5} className="phone-number-input-column">
                 <div>
-                  <input className="phone-number-input-field" placeholder="10 digit phone number" />
+                  <input
+                    onChange={PhoneNumberHandler}
+                    className="phone-number-input-field"
+                    placeholder="10 digit phone number"
+                  />
                 </div>
-                <div className="otp-number-info-line">You'll get an OTP on the number</div>
+                <div className="otp-number-info-line">
+                  You'll get an OTP on the number
+                </div>
               </Col>
               <Col md={3}>
-                <Button onClick={() => setOpenMenu(true)} className="send-otp-btn" >{ButtonText}</Button>
+                <Button
+                  onClick={() => setOpenMenu(true)}
+                  className="send-otp-btn"
+                >
+                  {ButtonText}
+                </Button>
               </Col>
             </Row>
           </Col>
         </Row>
       </div>
     );
-  }
-
-  else if (OpenMenu) {
+  } else if (OpenMenu) {
     return (
       <div className="confirm-otp-menu-container">
         <Row>
           <Col md={12}>
-            <OTPMenu />
+            <OTPclass
+              selectedTime={params.selectedTime}
+              selectedDate={params.selectedDate}
+            />
           </Col>
         </Row>
       </div>
@@ -51,15 +69,18 @@ export default function SendOTPMenu(date, time) {
   }
 }
 
-
-export function BookingDetails() {
+export function BookingDetails(params) {
+  let date = params.date;
+  if (date === "") {
+    date = moment().format("Do MMM YYYY");
+  }
   return (
     <Row className="booking-details">
       <Col md={4} className="booking-details-inner-col">
-        <div>Date</div>
+        <div>Date: {date}</div>
       </Col>
       <Col md={4} className="booking-details-inner-col">
-        <div>Time</div>
+        <div>Selected Time: {params.time}</div>
       </Col>
       <Col md={4} className="booking-details-inner-col">
         <Button size="sm" variant="light" className="change-appointment-btn">

@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import "./ScrollableTabs.css";
 import AppointmentTimings from "../../AppointmentTimes/Appointments";
+import moment from "moment";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -52,12 +53,13 @@ export default function ScrollableTabsButtonAuto(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  useEffect(() => {
-    //console.log(props.DoctorDataNested);
-  }, [props]);
+  // useEffect(() => {
+  //   console.log(props);
+  // }, [props]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    props.dateHandler(newValue);
   };
 
   return (
@@ -72,39 +74,35 @@ export default function ScrollableTabsButtonAuto(props) {
           scrollButtons="auto"
         //   aria-label="scrollable auto tabs example"
         >
-          <Tab label="Today" {...a11yProps(0)} />
-          <Tab label="Tomorrow" {...a11yProps(1)} />
-          <Tab label="9th Jan (Sunday)" {...a11yProps(2)} />
-          <Tab label="10th Jan (Monday)" {...a11yProps(3)} />
-          <Tab label="11th Jan (Tuesday)" {...a11yProps(4)} />
-          <Tab label="12th Jan (Wednesday)" {...a11yProps(5)} />
-          <Tab label="13th Jan (Thursday)" {...a11yProps(6)} />
+          <Tab label={moment().format("Do MMM YYYY")} {...a11yProps(0)} />how to pass down handler functions in react
+          <Tab label={moment().add(1, 'days').format("Do MMM YYYY").toString()} {...a11yProps(1)} />
+          <Tab label={moment().add(2, 'days').format("Do MMM YYYY").toString()} {...a11yProps(2)} />
+          <Tab label={moment().add(3, 'days').format("Do MMM YYYY").toString()} {...a11yProps(3)} />
+          <Tab label={moment().add(4, 'days').format("Do MMM YYYY").toString()} {...a11yProps(4)} />
+          <Tab label={moment().add(5, 'days').format("Do MMM YYYY").toString()} {...a11yProps(5)} />
+          <Tab label={moment().add(6, 'days').format("Do MMM YYYY").toString()} {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <AppointmentTimings {...props} />
-        {/* <br />
-        <div className="cnfrm-apt-btn">
-          <Button size="md">Confirm Appointment</Button>
-        </div> */}
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[0][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[1][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[2][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[3][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[4][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[5][0]} timeHandler={props.timeHandler} />
       </TabPanel>
       <TabPanel value={value} index={6}>
-        <AppointmentTimings {...props} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[6][0]} timeHandler={props.timeHandler} />
       </TabPanel>
     </div>
   );
