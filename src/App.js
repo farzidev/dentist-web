@@ -6,7 +6,7 @@ import HomePage from "./components/HomePage/HomePage";
 import FoundDoctors from "./components/FoundDoctors/FoundDoctors";
 import Blogs from "./components/Blog/Blog.jsx";
 import Blog from "./components/Blog/Blog";
-// import PhoneAuth from "./components/ListedDoctors/PhoneAuth";
+// import PhoneAuth from "./components/ListedDoctors/PhoneAuth/PhoneAuth";
 
 export default class App extends Component {
   render() {

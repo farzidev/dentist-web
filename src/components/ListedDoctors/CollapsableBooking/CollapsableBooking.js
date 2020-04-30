@@ -76,6 +76,9 @@ export default class CollapsableBooking extends Component {
               .format("Do MMM YYYY")
               .toString(),
           });
+          break;
+        default:
+          break;
       }
     }
   };
@@ -88,9 +91,9 @@ export default class CollapsableBooking extends Component {
     this.setState({ showSendOtpMenu: !this.state.showSendOtpMenu });
   };
 
-  // componentDidUpdate() {
-  //   console.log(this.state.selectedDate);
-  // }
+  componentDidUpdate() {
+    console.log(this.props.DoctorData.doctor_info);
+  }
 
   render() {
     return (
@@ -136,6 +139,7 @@ export default class CollapsableBooking extends Component {
                     <SendOTPMenu
                       selectedTime={this.state.selectedTime}
                       selectedDate={this.state.selectedDate}
+                      DoctorInfo={this.props.DoctorData.doctor_info}
                     />
                   </Col>
                 </Row>

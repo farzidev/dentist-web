@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Row, Col, Button } from "react-bootstrap";
 import "./Blogs.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faThumbsUp, faShareAlt } from "@fortawesome/free-solid-svg-icons";
@@ -18,16 +19,16 @@ export default class Blogs extends Component {
     };
   }
 
-  changeRoute = id => {
-    console.log("hitting push");
-    return this.props.routerProps.history.push(
-      `${this.props.routerProps.match.url}/${id}`
-    );
-  };
+  // changeRoute = id => {
+  //   console.log("hitting push");
+  //   return this.props.routerProps.history.push(
+  //     `${this.props.routerProps.match.url}/${id}`
+  //   );
+  // };
 
-  componentDidMount() {
-    console.log(this.props);
-  }
+  // componentDidMount() {
+  //   console.log(this.props);
+  // }
 
   render() {
     let blogList = this.state.blogs.map((blog, index) => {
@@ -35,7 +36,7 @@ export default class Blogs extends Component {
         <Row
           noGutters
           className="blog-list-element-base-row"
-          onClick={() => this.changeRoute(index)}
+        // onClick={() => this.changeRoute(index)}
         >
           <Col md={12}>
             <Row noGutters>
@@ -83,6 +84,11 @@ export default class Blogs extends Component {
                     and returned to their socket within 1 hour of being knocked
                     out.
                   </span>
+                </div>
+                <div className="read-more-btn-div">
+                  <Link to="/blog">
+                    <Button size="sm" className="read-more-btn">Read More</Button>
+                  </Link>
                 </div>
               </Col>
             </Row>

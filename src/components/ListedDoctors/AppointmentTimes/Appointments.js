@@ -3,36 +3,36 @@ import { Row, Col, Button, Container } from "react-bootstrap";
 import "./appointmentTime.css";
 
 export default class appointmentTime extends Component {
-  constructor() {
-    super();
-    // this.state = {
-    //   selectedTime: ""
-    // data: [],
-    // morningTime: [
-    //   { timing: "08:30 AM", isBooked: false },
-    //   { timing: "09:00 AM", isBooked: true },
-    //   { timing: "09:30 AM", isBooked: true },
-    //   { timing: "10:00 AM", isBooked: false },
-    //   { timing: "10:30 AM", isBooked: true }
-    // ],
-    // afternoonTime: [
-    //   { timing: "12:30 PM", isBooked: false },
-    //   { timing: "01:00 PM", isBooked: true },
-    //   { timing: "01:30 PM", isBooked: true },
-    //   { timing: "02:00 PM", isBooked: false },
-    //   { timing: "02:30 PM", isBooked: false }
-    // ],
-    // eveningTime: [
-    //   { timing: "06:00 PM", isBooked: true },
-    //   { timing: "06:30 PM", isBooked: false },
-    //   { timing: "07:00 PM", isBooked: true },
-    //   { timing: "07:30 PM", isBooked: false },
-    //   { timing: "08:00 PM", isBooked: true }
-    // ],
-    // isClicked: false
-    //   };
-    //   this.selectedTimeHandler = this.selectedTimeHandler.bind(this);
-  }
+  // constructor() {
+  //   super();
+  // this.state = {
+  //   selectedTime: ""
+  // data: [],
+  // morningTime: [
+  //   { timing: "08:30 AM", isBooked: false },
+  //   { timing: "09:00 AM", isBooked: true },
+  //   { timing: "09:30 AM", isBooked: true },
+  //   { timing: "10:00 AM", isBooked: false },
+  //   { timing: "10:30 AM", isBooked: true }
+  // ],
+  // afternoonTime: [
+  //   { timing: "12:30 PM", isBooked: false },
+  //   { timing: "01:00 PM", isBooked: true },
+  //   { timing: "01:30 PM", isBooked: true },
+  //   { timing: "02:00 PM", isBooked: false },
+  //   { timing: "02:30 PM", isBooked: false }
+  // ],
+  // eveningTime: [
+  //   { timing: "06:00 PM", isBooked: true },
+  //   { timing: "06:30 PM", isBooked: false },
+  //   { timing: "07:00 PM", isBooked: true },
+  //   { timing: "07:30 PM", isBooked: false },
+  //   { timing: "08:00 PM", isBooked: true }
+  // ],
+  // isClicked: false
+  //   };
+  //   this.selectedTimeHandler = this.selectedTimeHandler.bind(this);
+  // }
 
   // async componentDidMount() {
   //   const url = "http://18.221.196.111:6999/api/show-doctor-available-slots";
