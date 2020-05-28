@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./FeaturedServices.css";
 import { Row, Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class FeaturedServices extends Component {
   constructor(props) {
@@ -38,16 +39,18 @@ export default class FeaturedServices extends Component {
                         xs={6}
                         className="services-circle-column"
                       >
-                        <div className="services-circles">
-                          <Image
-                            className="services-circle-image"
-                            src="/assets/images/cleanTooth.png"
-                            alt="braces"
-                          />
-                        </div>
-                        <h6 className="circle-image-description">
-                          TOOTH CLEANING & WHITENING
-                        </h6>
+                        <Link to="/services">
+                          <div className="services-circles">
+                            <Image
+                              className="services-circle-image"
+                              src="/assets/images/cleanTooth.png"
+                              alt="braces"
+                            />
+                          </div>
+                          <h6 className="circle-image-description">
+                            TOOTH CLEANING & WHITENING
+                          </h6>
+                        </Link>
                       </Col>
                     );
                   })}
@@ -65,16 +68,18 @@ export default class FeaturedServices extends Component {
                         xs={6}
                         className="services-circle-column"
                       >
-                        <div className="services-circles">
-                          <Image
-                            className="services-circle-image"
-                            src="/assets/images/cleanTooth.png"
-                            alt="braces"
-                          />
-                        </div>
-                        <h6 className="circle-image-description">
-                          TOOTH CLEANING & WHITENING
-                        </h6>
+                        <Link to="/services">
+                          <div className="services-circles">
+                            <Image
+                              className="services-circle-image"
+                              src="/assets/images/cleanTooth.png"
+                              alt="braces"
+                            />
+                          </div>
+                          <h6 className="circle-image-description">
+                            TOOTH CLEANING & WHITENING
+                          </h6>
+                        </Link>
                       </Col>
                     );
                   })}

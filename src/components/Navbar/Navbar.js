@@ -12,9 +12,16 @@ export default class NavBar extends Component {
         expand="xl"
         variant="light"
       >
-        <Navbar.Brand>
+        <Navbar.Brand className="dentist-web-logo">
           <Link className="a-navbar-link" to="/">
-            <b>DentistWeb</b>
+            <img
+              className="footer-teeth-image"
+              src="/assets/images/footerTooth.png"
+              alt="Teeth"
+              height="30"
+              width="50"
+            />
+            <b>&nbsp;DentistWeb</b>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,16 +33,20 @@ export default class NavBar extends Component {
                 Home
               </Link>
             </Nav.Link>
-            {/* <Nav.Link className="hover-class-header" href="#aboutus">
-              AboutUs
+            <Nav.Link className="hover-class-header">
+              <Link className="a-navbar-link" to="/about-us">
+                About
+              </Link>
             </Nav.Link>
-            <Nav.Link className="hover-class-header" href="#services">
-              Services
-            </Nav.Link> */}
+            <Nav.Link className="hover-class-header">
+              <Link className="a-navbar-link" to="/services">
+                Services
+              </Link>
+            </Nav.Link>
             {/* <Nav.Link className="hover-class-header" href="#ourworks">
               Our Works
-            </Nav.Link> */}
-            {/* <Nav.Link className="hover-class-header" href="#pages">
+            </Nav.Link>
+            <Nav.Link className="hover-class-header" href="#pages">
               Pages
             </Nav.Link> */}
             <Nav.Link className="hover-class-header">
@@ -49,12 +60,12 @@ export default class NavBar extends Component {
           </Nav>
           <Form inline>
             {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
-            <Link to="/founddoctors">
+            <Link className="a-navbar-link" to="/founddoctors">
               <Button className="book-now-btn">Book Now</Button>
             </Link>
           </Form>
-        </Navbar.Collapse>
-      </Navbar>
+        </Navbar.Collapse >
+      </Navbar >
     );
   }
 }

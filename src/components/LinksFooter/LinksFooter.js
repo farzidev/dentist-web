@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-scroll";
-import { Link as RedirectLink } from "react-router-dom";
-import "./Footer.css";
+import "./LinksFooter.css";
+import { Link } from "react-router-dom";
 import { Col, Row, Form, Button, Image } from "react-bootstrap";
 
 export default class Footer extends Component {
@@ -58,37 +57,21 @@ export default class Footer extends Component {
                     </h6>
                     <br />
                     <div className="footer-links-div">
-                      <Link
-                        activeClass="active"
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
+                      <Link to="/"
                       >
                         -&nbsp;&nbsp;Home
                       </Link>
                     </div>
                     <div className="footer-links-div">
                       <Link
-                        activeClass="active"
-                        to="services"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={1000}
+                        to="/services"
                       >
                         -&nbsp;&nbsp;Services
                       </Link>
                     </div>
                     <div className="footer-links-div">
                       <Link
-                        activeClass="active"
-                        to="testimonials"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={900}
+                        to="/"
                       >
                         -&nbsp;&nbsp;Testimonials
                       </Link>
@@ -132,8 +115,9 @@ export default class Footer extends Component {
                     </h6>
                     <br />
                     <div className="footer-links-div">
-                      <RedirectLink to="/about-us">-&nbsp;&nbsp;About&nbsp;Us</RedirectLink>
-                      <br />
+                      <Link to="/about-us">
+                        -&nbsp;&nbsp;About&nbsp;Us
+                      </Link>
                     </div>
                     <div className="footer-links-div">
                       <a href="#some-link" className="footer-links">-&nbsp;&nbsp;Privacy Policy</a>

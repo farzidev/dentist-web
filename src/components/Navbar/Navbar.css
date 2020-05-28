@@ -2,13 +2,19 @@
   background-color: white;
   position: fixed;
   top: 0;
-  width: 98.8%;
+  width: 100%;
   z-index: 1000000000;
   padding: 0.9rem 1rem 1rem 1rem;
 }
 
 .hover-class-header:hover {
   color: #108ea3 !important;
+}
+
+.dentist-web-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -20,13 +26,15 @@ p {
 }
 
 .book-now-btn {
-  background-color: #fe8369;
+  color: rgb(39, 39, 39);
+  background-color: #8be6b4;
   border: none;
-  box-shadow: 0 0.3rem 0.5rem rgba(134, 133, 133, 0.836);
+  box-shadow: 0 0.1rem 0.3rem rgba(134, 133, 133, 0.836);
 }
 
 .book-now-btn:hover {
-  background-color: #5dc7da !important;
+  color: rgb(39, 39, 39);
+  background-color: #23e279 !important;
 }
 
 /* a {
@@ -34,6 +42,7 @@ p {
 } */
 
 .a-navbar-link {
+  padding-left: 1em;
   color: rgba(0, 0, 0, 0.5) !important;
 }
 

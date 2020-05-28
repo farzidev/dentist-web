@@ -15,7 +15,7 @@
 }
 
 .testimonial-card {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   max-width: 17rem;
   border-radius: 5px;
   padding: 3rem 2rem;
@@ -28,6 +28,10 @@
 
 .testimonial-text-inner-container {
   margin-right: 1.5rem;
+}
+
+.slick-dots li button::before {
+  font-size: 0.6rem !important;
 }
 
 .testimonial-text-container {

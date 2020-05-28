@@ -22,7 +22,7 @@ export default class ListedDoctors extends Component {
   closeModal = () => this.setState({ showModal: false });
 
   async componentDidMount() {
-    const url = "http://18.221.196.111:6999/api/show-doctor-available-slots";
+    const url = "http://3.19.62.186:6999/api/show-doctor-available-slots";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ data: data.data });

@@ -1,8 +1,8 @@
-.about-us-container {
+.services-container {
   margin: 2.5rem 0 3rem 0;
 }
 
-.about-us-background {
+.services-background {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,29 +16,29 @@
   color: #000000c2;
 }
 
-.about-us-background h5 {
+.services-background h5 {
   font-family: Muli;
   font-weight: 600;
 }
 
-.about-us-image-container {
+.services-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-us-parent-content-container {
+.services-parent-content-container {
   padding: 0 1rem 0 3rem;
 }
 
-.about-dentist-web-headline {
+.services-headline {
   font-family: Muli;
   font-size: 1.5rem;
   font-weight: 600;
   color: #000000c2;
 }
 
-.about-us-content-div {
+.services-content-div {
   font-size: 17px;
   color: #2a2a2ad5;
 }

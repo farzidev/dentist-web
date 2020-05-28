@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+import LinksFooter from "../LinksFooter/LinksFooter";
 import ListedDoctors from "../ListedDoctors/ListedDoctors";
 import { Row, Col, Image } from "react-bootstrap";
 import "./FoundDoctors.css";
@@ -95,7 +95,7 @@ export default class FoundDoctors extends Component {
           </Col>
           <Col md={1}></Col>
         </Row>
-        <Footer />
+        <LinksFooter />
       </div>
     );
   }

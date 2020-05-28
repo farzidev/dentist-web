@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
-// import { post } from "../../../helpers/httpHelper";
 import axios from "axios";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from "../../../firebaseConfig";
@@ -23,9 +22,7 @@ function SendOTPMenu(params) {
   const [ButtonText] = useState("Send OTP");
   const [OpenMenu, setOpenMenu] = useState(false);
   const [ContactNumber, setContactNumber] = useState(0);
-  // const [Otp, setOtp] = useState('');
   const [confirmResult, setconfirmResult] = useState(null);
-  // const [UserId, setUserId] = useState('');
   const [IsVerified, setIsVerified] = useState(false);
 
   function PhoneNumberHandler(event) {
@@ -36,59 +33,14 @@ function SendOTPMenu(params) {
     setContactNumber(PhoneNumber);
   }
 
-  // function OtpHandler(otp) {
-  //   setOtp(otp);
-  // }
-
-  //Single block firebase code which would work using window.prompt taking user input.
-
-  // useEffect(() => {
-  //   console.log(Otp);
-  // }, [Otp]);
-
-  // const phoneAuth = (phoneNumber) => {
-  //   console.log("Phone authentication is getting called");
-  //   const CodePhoneNumber = `+91` + phoneNumber;
-  //   console.log(CodePhoneNumber);
-
-  //   let recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-  //     "recaptcha-container",
-  //     {
-  //       size: "invisible",
-  //       'callback': function (token) {
-  //         console.log(token);
-  //       },
-  //       'expired-callback': function () {
-  //         console.log("call");
-  //       }
-  //     }
-  //   );
-  // var provider = new firebase.auth.PhoneAuthProvider();
-  // provider
-  //   .verifyPhoneNumber(CodePhoneNumber, recaptchaVerifier)
-  //   .then(function (verificationId) {
-  //     if (Otp.length == 6) {
-  //       let verificationCode = Otp;
-  //       return firebase.auth.PhoneAuthProvider.credential(
-  //         verificationId,
-  //         verificationCode
-  //       );
-  //     }
-
-  //   })
-  //   .then(function (phoneCredential) {
-  //     console.log(phoneCredential);
-  //     console.log("User Authenticated");
-  //     return firebase.auth().signInWithCredential(phoneCredential);
-  //   });
-
-  // };
-
   const confirmAppointment = () => {
-    let docName = params.DoctorInfo.first_name + `${" "}` + params.DoctorInfo.last_name;
+    let docId = params.DoctorInfo.id;
+    let passedDate = date;
+    passedDate = moment().format("YYYY-MM-DD");
+    console.log(passedDate);
     axios
-      .post("http://18.221.196.111:6999/api/create-appointment", {
-        doctor: docName,
+      .post("http://3.19.62.186:6999/api/create-appointment", {
+        doctor: docId,
         patient: ContactNumber,
         date: date,
         time: params.selectedTime,
@@ -138,6 +90,7 @@ function SendOTPMenu(params) {
           console.log("Verified");
           alert("Great! Your Appointment is Booked!");
           confirmAppointment();
+          params.history.push('/');
         })
         .catch(error => {
           console.log(error)
@@ -178,10 +131,10 @@ function SendOTPMenu(params) {
                   disabled={ContactNumber.toString().length !== 10}
                   onClick={() => {
                     setOpenMenu(true);
-                    // post("http://18.221.196.111:6999/api/create-patient", ContactNumber)
+                    // post("http://3.19.62.186:6999/api/create-patient", ContactNumber)
                     // phoneAuth(ContactNumber);
                     axios
-                      .post("http://18.221.196.111:6999/api/create-patient", {
+                      .post("http://3.19.62.186:6999/api/create-patient", {
                         name: "Patient's Name",
                         mobile: ContactNumber,
                       })
@@ -220,7 +173,7 @@ function SendOTPMenu(params) {
 const firebaseAppAuth = firebaseApp.auth();
 export default withFirebaseAuth({
   firebaseAppAuth,
-})(SendOTPMenu);
+})(withRouter(SendOTPMenu));
 
 export function BookingDetails(params) {
   let date = params.date;

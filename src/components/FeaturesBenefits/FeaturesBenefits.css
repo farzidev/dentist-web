@@ -1,6 +1,7 @@
 .features-benefits-container {
   padding: 1rem 0 1rem 0;
   background-color: #f0fdff;
+  margin-bottom: 2rem;
 }
 
 .features-benefits-header {
@@ -40,7 +41,8 @@
 }
 
 .features-benefits-card-2,
-.features-benefits-card-3 {
+.features-benefits-card-3,
+.features-benefits-card-4 {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.178);
   font-size: 0.8rem;
@@ -53,21 +55,15 @@
 
 .features-benefits-card-1:hover,
 .features-benefits-card-2:hover,
-.features-benefits-card-3:hover {
+.features-benefits-card-3:hover,
+.features-benefits-card-4:hover {
   box-shadow: 0 1rem 1rem rgba(63, 62, 62, 0.63);
-  background-color: #fe8369;
-  color: white;
-}
-
-.features-benefits-card-1:hover svg,
-.features-benefits-card-2:hover svg,
-.features-benefits-card-3:hover svg {
-  fill: white;
 }
 
 .target-svg,
 .time-svg,
-.support-svg {
+.support-svg,
+.together-svg {
   height: 3rem;
   width: 3rem;
   fill: #fe8369;
@@ -77,15 +73,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .view-all-button {
-  background-color: #fe8369;
+  background-color: #8be6b4;
+  color: rgb(39, 39, 39);
   border: none;
 }
 
 .view-all-button:hover {
-  background-color: #5dc7da;
+  background-color: #23e279;
+  color: rgb(39, 39, 39);
 }
 
 .streamline-process {
@@ -96,7 +95,7 @@
 }
 
 .streamline-content {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #444444;
   font-family: Muli;
 }
@@ -110,6 +109,7 @@
 
 .features-benefits-card-content {
   font-family: Muli;
+  font-size: 14px;
 }
 
 @media (min-width: 1026px) and (max-width: 1440px) {
