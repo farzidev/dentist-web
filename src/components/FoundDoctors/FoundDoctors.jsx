@@ -14,7 +14,7 @@ export default class FoundDoctors extends Component {
           <h5>We have found the best doctors for you.</h5>
         </div>
 
-        <Row>
+        <Row noGutters>
           <Col md={1}></Col>
           <Col md={10}>
             <Row className="base-row">

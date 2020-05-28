@@ -1,9 +1,9 @@
 .single-blog-post-base-column {
-  margin: 1rem 0 3rem 0;
+  margin: 5.5rem 0 3rem 0;
   padding-bottom: 1rem;
   border-radius: 5px;
-  box-shadow: 0.3rem 0.3rem 2px rgba(127, 255, 212, 0.09),
-    -0.3rem -0.3rem 2px rgba(127, 255, 212, 0.09);
+  box-shadow: 0.2rem 0.2rem 2px rgba(150, 241, 211, 0.09),
+    -0.3rem -0.3rem 2px rgba(154, 255, 221, 0.09);
 }
 
 /* .single-blog-page-image-div {

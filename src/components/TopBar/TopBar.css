@@ -1,0 +1,15 @@
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2.5rem;
+}
+
+.topbar-svgs {
+  font-size: 1.5rem;
+  color: #fd947f;
+}
+
+.topbar-svgs span {
+  padding-left: 1rem;
+}

@@ -1,4 +1,13 @@
-.navbar-element {
+.navbar-element-1 {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  padding: 0.9rem 1rem 1rem 1rem;
+}
+
+.navbar-element-2 {
   background-color: white;
   position: fixed;
   top: 0;

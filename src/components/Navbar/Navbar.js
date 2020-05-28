@@ -8,7 +8,7 @@ export default class NavBar extends Component {
     return (
       <Navbar
         collapseOnSelect
-        className="navbar-element"
+        className="navbar-element-1"
         expand="xl"
         variant="light"
       >
@@ -41,6 +41,11 @@ export default class NavBar extends Component {
             <Nav.Link className="hover-class-header">
               <Link className="a-navbar-link" to="/services">
                 Services
+              </Link>
+            </Nav.Link>
+            <Nav.Link className="hover-class-header">
+              <Link className="a-navbar-link" to="/founddoctors">
+                Locations
               </Link>
             </Nav.Link>
             {/* <Nav.Link className="hover-class-header" href="#ourworks">
