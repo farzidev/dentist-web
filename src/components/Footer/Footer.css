@@ -8,7 +8,7 @@
 }
 
 .main-working-column {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem !important;
   border-bottom: 1px solid #fe8369;
 }
 
@@ -20,7 +20,8 @@
 }
 
 .footer-end {
-  margin-top: 2rem;
+  margin-top: 0.7rem !important;
+  margin-bottom: 0 !important;
   text-align: center;
   font-family: Muli;
 }

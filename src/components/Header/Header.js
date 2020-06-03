@@ -44,8 +44,16 @@ export default class Header extends Component {
               >
                 <div className="header-contain">
                   <div className="header-text-content">
-                    <h6>MEET THE DOCTORS</h6>
-                    <span className="header-subtitle">WE HELP YOU ACHIEVE THE PERFECT SMILE.</span>
+                    <h6>AFFORDABLE</h6>
+                    <span className="header-subtitle">DENTAL IMPLANTS</span>
+                    <br />
+                    <br />
+                    <span>
+                      Dental implants could improve your quality of life,
+                      confidence, and appearance if you are missing teeth due to
+                      extraction, injury, or disease. Implants are small
+                      titanium posts placed into the jaw.
+                    </span>
                     <br />
                   </div>
                   <br />
@@ -67,9 +75,9 @@ export default class Header extends Component {
                 <div className="side-image-container">
                   <Image
                     className="first-banner-image"
-                    src="/assets/images/doctor-header-1.png"
-                    height="400px"
-                    width="500px"
+                    src="/assets/images/Banner1_Teeth.png"
+                    // height="350px"
+                    // width="550px"
                     alt="headerTooth"
                   />
                 </div>
@@ -88,8 +96,16 @@ export default class Header extends Component {
               >
                 <div className="header-contain">
                   <div className="header-text-content">
-                    <h6>FEATURED PROCEDURES</h6>
-                    <span className="header-subtitle">WE PROVIDE HIGH QUALITY DENTAL CARE.</span>
+                    <h6>SPECIALIST</h6>
+                    <span className="header-subtitle">DENTAL HYGIENE</span>
+                    <br />
+                    <br />
+                    <span>
+                      Dental hygiene is the practice of keeping teeth clean and
+                      healthy. Our mouths are subjected to over 600 different
+                      kinds of bacteria all the time, and while some of the
+                      bacteria are good.
+                    </span>
                     <br />
                   </div>
                   <br />
@@ -111,9 +127,9 @@ export default class Header extends Component {
                 <div className="side-image-container">
                   <Image
                     className="second-banner-image"
-                    src="/assets/images/doctor-info-header.png"
-                    height="400px"
-                    width="530px"
+                    src="/assets/images/Banner2_Doctor.png"
+                    // height="500px"
+                    // width="530px"
                     alt="headerTooth"
                   />
                 </div>
@@ -132,8 +148,18 @@ export default class Header extends Component {
               >
                 <div className="header-contain">
                   <div className="header-text-content">
-                    <h6>OUR OFFICE</h6>
-                    <span className="header-subtitle">WE PROVIDE A GREAT ENVIRONMENT.</span>
+                    <h6>HAPPY</h6>
+                    <span className="header-subtitle">
+                      DENTAL FAMILY
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Your children are welcome at the Tooth Corner! All our
+                      Southern Ontario dental clinics offer pediatric dentistry,
+                      which caters to the unique oral health needs of infants,
+                      young children, and adolescents.
+                    </span>
                     <br />
                   </div>
                   <br />
@@ -155,9 +181,9 @@ export default class Header extends Component {
                 <div className="side-image-container">
                   <Image
                     className="third-banner-image"
-                    src="/assets/images/teeth-clean.png"
-                    height="400px"
-                    width="450px"
+                    src="/assets/images/Banner3_Group.png"
+                    // height="400px"
+                    // width="450px"
                     alt="headerTooth"
                   />
                 </div>

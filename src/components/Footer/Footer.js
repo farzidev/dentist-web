@@ -198,7 +198,7 @@ export default class Footer extends Component {
                 </Row>
               </div>
             </Col>
-            <Col md={1}></Col>
+            <Col md={1}  ></Col>
           </Row>
           <p className="footer-end">
             Copyright © 2019 Dental Web. All rights reserved.
