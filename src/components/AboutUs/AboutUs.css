@@ -28,7 +28,7 @@
 }
 
 .about-us-parent-content-container {
-  padding: 0 1rem 0 3rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .about-dentist-web-headline {
@@ -41,4 +41,19 @@
 .about-us-content-div {
   font-size: 17px;
   color: #2a2a2ad5;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .about-us-background {
+    min-height: 7.5rem;
+  }
+
+  .about-us-content-div {
+    font-size: 1rem;
+    color: #2a2a2ad5;
+  }
+
+  .about-us-parent-content-container {
+    margin-bottom: 2rem;
+  }
 }

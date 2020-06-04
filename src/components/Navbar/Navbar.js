@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-import { Navbar, Nav, Button, Form } from "react-bootstrap";
+import { Navbar, Nav, Button, Form, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
@@ -39,9 +39,45 @@ export default class NavBar extends Component {
               </Link>
             </Nav.Link>
             <Nav.Link className="hover-class-header">
-              <Link className="a-navbar-link" to="/services">
-                Services
-              </Link>
+              {/* <Dropdown>
+                <Dropdown.Toggle variant="none" id="dropdown-basic">
+                  Services
+               </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item >Invisalign</Dropdown.Item>
+                  <Dropdown.Item >Root Canal</Dropdown.Item>
+                  <Dropdown.Item >Cosmetic Dentistry</Dropdown.Item>
+                  <Dropdown.Item >Extractions</Dropdown.Item>
+                  <Dropdown.Item >Dental Braces</Dropdown.Item>
+                  <Dropdown.Item >Oral Hygiene</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown> */}
+              <div class="dropdown">
+                <span class="dropbtn">Services</span>
+                <div class="dropdown-content">
+                  <Link className="a-navbar-link" to="/services">
+                    Invisalign
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Dental Hygiene
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Braces
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Extractions
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Root Canal
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Cavity Repair
+                  </Link>
+                  <Link className="a-navbar-link" to="/services">
+                    Implants
+                  </Link>
+                </div>
+              </div>
             </Nav.Link>
             <Nav.Link className="hover-class-header">
               <Link className="a-navbar-link" to="/founddoctors">

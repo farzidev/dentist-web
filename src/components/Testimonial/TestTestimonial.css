@@ -15,10 +15,10 @@
 }
 
 .testimonial-card {
-  font-size: 0.8rem;
-  max-width: 17rem;
+  font-size: 14px;
+  max-width: 17.5rem;
   border-radius: 5px;
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   background-color: white;
   border: 0.5px solid rgba(56, 56, 56, 0.1);
@@ -75,7 +75,7 @@
     z-index: -1;
     padding: 2rem 0 2rem 7rem !important;
     min-width: 45rem;
-    min-height: 27rem;
+    min-height: 33rem;
   }
 }
 

@@ -81,6 +81,7 @@ export default class Responsive extends Component {
                 <span className="testimonial-card-content">
                   <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
+                  comes to us.We thrive to create the best experience for everyone who
                   comes to us.</div>
                   <br />
                   <span className="testimonial-author">Aman Rawat</span>
@@ -113,6 +114,7 @@ export default class Responsive extends Component {
                 <span className="testimonial-card-content">
                   <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
+                  comes to us.We thrive to create the best experience for everyone who
                   comes to us.</div>
                   <br />
                   <span className="testimonial-author">Aman Rawat</span>
@@ -145,6 +147,7 @@ export default class Responsive extends Component {
                 <span className="testimonial-card-content">
                   <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
+                  comes to us.We thrive to create the best experience for everyone who
                   comes to us.</div>
                   <br />
                   <span className="testimonial-author">Aman Rawat</span>
@@ -177,6 +180,7 @@ export default class Responsive extends Component {
                 <span className="testimonial-card-content">
                   <div>We thrive to create the best experience for everyone who comes
                   to us.We thrive to create the best experience for everyone who
+                  comes to us.We thrive to create the best experience for everyone who
                   comes to us.</div>
                   <br />
                   <span className="testimonial-author">Aman Rawat</span>
