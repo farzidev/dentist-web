@@ -17,8 +17,8 @@ function SendOTPMenu(params) {
   if (date === "") {
     date = moment().format("Do MMM YYYY");
   }
-  console.log(params);
-  console.log(date);
+  // console.log(params);
+  // console.log(date);
   const [ButtonText] = useState("Send OTP");
   const [OpenMenu, setOpenMenu] = useState(false);
   const [ContactNumber, setContactNumber] = useState(0);
@@ -42,7 +42,7 @@ function SendOTPMenu(params) {
       .post("http://3.19.62.186:6999/api/create-appointment", {
         doctor: docId,
         patient: ContactNumber,
-        date: date,
+        date: passedDate,
         time: params.selectedTime,
         day: "Monday",
         session: "Morning",

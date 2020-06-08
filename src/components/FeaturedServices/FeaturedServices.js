@@ -1,13 +1,34 @@
 import React, { Component } from "react";
 import "./FeaturedServices.css";
 import { Row, Col, Image } from "react-bootstrap";
+import { ServiceOne, ServiceTwo, ServiceThree, ServiceFour, ServiceFive, ServiceSix, ServiceSeven, ServiceEight, ServiceNine, ServiceTen, ServiceEleven, ServiceTwelve } from "../../svg-images/ServicesSVG";
 import { Link } from "react-router-dom";
 
 export default class FeaturedServices extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [0, 1, 2, 3, 4, 5]
+      items: [0, 1, 2, 3, 4, 5],
+      images_array_1: [
+        <ServiceOne />, <ServiceTwo />, <ServiceThree />, <ServiceFour />, <ServiceFive />, <ServiceSix />
+      ],
+      images_array_2: [
+        <ServiceSeven />, <ServiceEight />, <ServiceNine />, <ServiceTen />, <ServiceEleven />, <ServiceTwelve />
+      ],
+      services_array: [
+        'Tooth Whitening',
+        'Braces',
+        'Tooth Implants',
+        'Teeth Insurance',
+        'Dental Hygiene',
+        'Dental Veneers',
+        'Swollen Gums',
+        'Sensitivity Issues',
+        'Invisalign',
+        'Root Canal',
+        'Tooth Extraction',
+        'Cavity Repairs',
+      ]
     };
   }
   render() {
@@ -41,14 +62,15 @@ export default class FeaturedServices extends Component {
                       >
                         <Link to="/services">
                           <div className="services-circles">
-                            <Image
+                            {/* <Image
                               className="services-circle-image"
-                              src="/assets/images/cleanTooth.png"
+                              src={this.state.images[index + 1]}
                               alt="braces"
-                            />
+                            /> */}
+                            {this.state.images_array_1[index]}
                           </div>
                           <h6 className="circle-image-description">
-                            TOOTH CLEANING & WHITENING
+                            {this.state.services_array[index].toUpperCase()}
                           </h6>
                         </Link>
                       </Col>
@@ -70,14 +92,15 @@ export default class FeaturedServices extends Component {
                       >
                         <Link to="/services">
                           <div className="services-circles">
-                            <Image
+                            {/* <Image
                               className="services-circle-image"
                               src="/assets/images/cleanTooth.png"
                               alt="braces"
-                            />
+                            /> */}
+                            {this.state.images_array_2[index]}
                           </div>
                           <h6 className="circle-image-description">
-                            TOOTH CLEANING & WHITENING
+                            {this.state.services_array[index + 6].toUpperCase()}
                           </h6>
                         </Link>
                       </Col>

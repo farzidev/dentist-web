@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Navbar from "../Navbar/Navbar";
 import LinksFooter from "../LinksFooter/LinksFooter";
 import "./AboutUs.css";
-import { Col, Row, Image } from "react-bootstrap";
+import { Col, Row, Image, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class AboutUs extends Component {
   render() {
@@ -54,9 +55,14 @@ export default class AboutUs extends Component {
               <div className="about-us-image-container">
                 <Image
                   src="assets/images/about-us-illus.png"
-                  height="250px"
-                  width="220px"
+                  height="280px"
+                  width="240px"
                 />
+              </div>
+              <div className="appointment-btn-services-page">
+                <Link to="/founddoctors">
+                  <Button className="services-page-book-now-btn">Book Appointment Now</Button>
+                </Link>
               </div>
             </Col>
           </Row>

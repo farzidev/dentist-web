@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -53,10 +53,6 @@ export default function ScrollableTabsButtonAuto(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  // useEffect(() => {
-  //   console.log(props);
-  // }, [props]);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
     props.dateHandler(newValue);
@@ -84,25 +80,25 @@ export default function ScrollableTabsButtonAuto(props) {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[0][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[0][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[1][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[1][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[2][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[2][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[3][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[3][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[4][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[4][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[5][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[5][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
       <TabPanel value={value} index={6}>
-        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[6][0]} timeHandler={props.timeHandler} />
+        <AppointmentTimings {...props.DoctorDataNested.doctor_slots[6][0]} timeHandler={props.timeHandler} docId={props.DoctorDataNested.doctor_info.id} />
       </TabPanel>
     </div>
   );

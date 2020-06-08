@@ -91,9 +91,9 @@ export default class CollapsableBooking extends Component {
     this.setState({ showSendOtpMenu: !this.state.showSendOtpMenu });
   };
 
-  componentDidUpdate() {
-    console.log(this.props.DoctorData.doctor_info);
-  }
+  // componentDidUpdate() {
+  //   console.log(this.props.DoctorData.doctor_info);
+  // }
 
   render() {
     return (

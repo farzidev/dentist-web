@@ -22,6 +22,28 @@
 }
 
 .services-image-container {
+  background-image: url(/assets/images/sidebar-background.png);
+  background-size: 85%;
+  padding-bottom: 2rem;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-page-book-now-btn {
+  margin-top: 1rem;
+  color: white;
+  background-color: #ff5e5e;
+  border: none;
+}
+
+.services-page-book-now-btn:hover {
+  background-color: #fd7272;
+}
+
+.appointment-btn-services-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +68,7 @@
 @media (min-width: 300px) and (max-width: 768px) {
   .services-background {
     min-height: 7.5rem;
+    background-image: url(/assets/images/mobile-background-services.png);
   }
 
   .services-content-div {

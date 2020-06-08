@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .about-us-parent-content-container {
@@ -43,9 +44,27 @@
   color: #2a2a2ad5;
 }
 
+.services-page-book-now-btn {
+  margin-top: 1rem;
+  color: white;
+  background-color: #ff5e5e;
+  border: none;
+}
+
+.services-page-book-now-btn:hover {
+  background-color: #fd7272;
+}
+
+.appointment-btn-services-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 300px) and (max-width: 768px) {
   .about-us-background {
     min-height: 7.5rem;
+    background-image: url(/assets/images/mobile-background-services.png);
   }
 
   .about-us-content-div {

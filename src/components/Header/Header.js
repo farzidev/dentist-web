@@ -155,7 +155,7 @@ export default class Header extends Component {
                     <br />
                     <br />
                     <span>
-                      Your children are welcome at the Tooth Corner! All our
+                      Your children are welcome at the DentistWeb! All our
                       Southern Ontario dental clinics offer pediatric dentistry,
                       which caters to the unique oral health needs of infants,
                       young children, and adolescents.
