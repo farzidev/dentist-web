@@ -17,7 +17,7 @@ export default class FoundDoctors extends Component {
         <Row noGutters>
           <Col md={1}></Col>
           <Col md={10}>
-            <Row className="base-row">
+            <Row noGutters className="base-row">
               <Col lg={9} className="listed-doctors-left-col">
                 <ListedDoctors />
               </Col>
@@ -59,7 +59,7 @@ export default class FoundDoctors extends Component {
                 </div>
                 <br />
                 <div className="consult-a-doctor">
-                  <Row>
+                  <Row noGutters>
                     <Col
                       xl={4}
                       lg={12}

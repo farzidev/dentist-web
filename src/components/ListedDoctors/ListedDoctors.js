@@ -140,10 +140,7 @@ export default class ListedDoctors extends Component {
     });
     return (
       <Container fluid className="doctors-list-container">
-        <div className="sort-function">
-          {/* <div className="best-doctors-line">
-            We have found the best doctors for you in your area.
-          </div> */}
+        {/* <div className="sort-function">
           <Dropdown className="sort-functionality" drop="left">
             <Dropdown.Toggle variant="light" id="dropdown-basic">
               Sort By
@@ -154,9 +151,9 @@ export default class ListedDoctors extends Component {
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-        </div>
+        </div> */}
         <div className="listed-doctors">
-          <Row className="doctors-list-base-row">{doctorsList}</Row>
+          <Row noGutters className="doctors-list-base-row">{doctorsList}</Row>
           <br />
         </div>
       </Container>

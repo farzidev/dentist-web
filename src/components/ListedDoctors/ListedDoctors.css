@@ -63,9 +63,6 @@
 
 /* Media Queries */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-}
-
 @media (min-width: 481px) and (max-width: 767px) {
   .doctors-degree-field {
     font-size: 0.9rem;

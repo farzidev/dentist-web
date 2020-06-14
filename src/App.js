@@ -13,7 +13,7 @@ import Services from "./components/ServicesPage/Services";
 export default class App extends Component {
   render() {
     return (
-      <Container className="App" fluid>
+      <Container fluid className="App">
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />

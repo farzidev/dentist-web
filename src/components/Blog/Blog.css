@@ -10,13 +10,18 @@
   margin-bottom: 2rem;
 } */
 
-.single-blog-page-image-div {
+/* .single-blog-page-image-div {
   height: 17rem;
   margin-bottom: 2rem;
   background-image: url(/assets/images/single-blog-page-image.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+.single-blog-page-image-div {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .single-blog-header {
@@ -73,3 +78,13 @@
   position: absolute;
   right: 0;
 } */
+
+.blog-video {
+  width: 70%;
+}
+
+@media (min-width: 325px) and (max-width: 480px) {
+  .single-blog-page-image-div {
+    height: 7rem;
+  }
+}

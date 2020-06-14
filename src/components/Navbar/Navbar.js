@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-import { Navbar, Nav, Button, Form, Dropdown } from "react-bootstrap";
+import { Navbar, Nav, Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {

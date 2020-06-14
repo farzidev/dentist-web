@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import NavBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +14,7 @@ export default class Blog extends Component {
       lastName: "Hathaway",
       blogTitle: "Want Brighter, Whiter Teeth ?",
       datePosted: "Feb 27, 2020",
-      votes: "96"
+      votes: "96",
     };
   }
   render() {
@@ -51,8 +51,11 @@ export default class Blog extends Component {
                 </span>
               </div>
               <div>
-                <div className="single-blog-page-image-div">
-                  {/* <Image fluid src="/assets/images/sbpi.png" /> */}
+                <div>
+                  <Image
+                    src="/assets/images/single-blog-page-image.png"
+                    className="single-blog-page-image-div"
+                  />
                 </div>
                 <div className="basic-content">
                   Retrieve the tooth, hold it by the crown (the part that is
@@ -94,7 +97,7 @@ export default class Blog extends Component {
                   30 to 45 minutes) for a week or more.
                 </div>
                 <div className="video-container-div">
-                  <video width="600" controls>
+                  <video className="blog-video" controls>
                     <source
                       src="https://youtu.be/lTDW5tt3S90"
                       type="video/mp4"

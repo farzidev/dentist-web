@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./FeaturedServices.css";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { ServiceOne, ServiceTwo, ServiceThree, ServiceFour, ServiceFive, ServiceSix, ServiceSeven, ServiceEight, ServiceNine, ServiceTen, ServiceEleven, ServiceTwelve } from "../../svg-images/ServicesSVG";
 import { Link } from "react-router-dom";
 
